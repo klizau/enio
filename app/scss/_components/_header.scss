@@ -1,6 +1,7 @@
 .header {
   padding-bottom: 34px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  font-size: 16px;
 }
 
 .contact-information {
@@ -34,4 +35,17 @@
 .navigation__list__item {
   padding: 0 16px;
   text-transform: uppercase;
+}
+
+.navigation__link:hover {
+  color: #fae2b4;
+}
+
+.lang--active {
+  color: black;
+  padding-right: 20px;
+}
+
+.lang--inactive {
+  color: #a4a4a4 !important;
 }
