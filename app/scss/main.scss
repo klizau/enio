@@ -36,6 +36,23 @@ body {
     }
   }
 }
+ul {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style-type: none;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
 .events-none {
   pointer-events: none;
 }
