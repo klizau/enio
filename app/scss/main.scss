@@ -19,7 +19,7 @@ body {
 body {
   min-width: 320px;
   position: relative;
-  font-family: sans-serif;
+  font-family: "Jost", sans-serif;
   overflow-x: hidden;
   color: black;
   display: flex;
@@ -36,6 +36,11 @@ body {
     }
   }
 }
+h1 {
+  padding: 0;
+  margin: 0;
+}
+
 ul {
   margin: 0;
   padding: 0;
@@ -99,6 +104,7 @@ strong {
 @import "./_components/header";
 @import "./_components/footer";
 @import "./_components/container";
+@import "./_components/button";
 
 @import "./_sections/section";
 @import "./_sections/headline";

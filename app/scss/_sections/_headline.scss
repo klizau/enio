@@ -1,0 +1,23 @@
+.headline {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.headline__text-block {
+  display: flex;
+  flex-direction: column;
+  width: 298px;
+}
+
+.headline__title {
+  font-size: 48px;
+  font-weight: medium;
+  padding-bottom: 18px;
+}
+
+.headline__text {
+  font-size: 18px;
+  padding-bottom: 42px;
+}

@@ -1,0 +1,26 @@
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  height: 40px;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 0 43px;
+  border: 1px solid black;
+  border-radius: 30px;
+  box-sizing: border-box;
+}
+
+.button:hover {
+  background-color: #fae2b4;
+  border: none;
+}
+
+.headline__button {
+  text-transform: uppercase;
+}
+
+.line {
+  padding-left: 10px;
+}

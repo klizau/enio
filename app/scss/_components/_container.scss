@@ -1,5 +1,10 @@
 .container {
-  max-width: 1252px;
+  box-sizing: border-box;
+  max-width: 1440px;
   margin: 0 auto;
-  padding: 0 14px;
+  padding: 0 80px;
+}
+
+.container--left {
+  padding-right: 0;
 }
