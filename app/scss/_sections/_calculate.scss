@@ -34,14 +34,20 @@
   margin-bottom: 22px;
   width: 100%;
   position: relative;
-  &::before {
-    position: absolute;
-    content: "";
-  }
 }
 
 .list__item {
+  position: relative;
   padding-bottom: 12px;
+  &::before {
+    position: absolute;
+    content: "";
+    background: url(../../img/list.svg) 0 0 / contain no-repeat;
+    left: -25px;
+    top: 4px;
+    width: 14px;
+    height: 14px;
+  }
 }
 
 .requirement {
