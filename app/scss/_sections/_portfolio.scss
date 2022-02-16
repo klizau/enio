@@ -31,3 +31,39 @@
   line-height: 18px;
   margin-bottom: 12px;
 }
+
+.portfolio__progects {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 304px;
+  height: 382px;
+  box-sizing: border-box;
+  border-right: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.progect {
+  padding-right: 70px;
+  margin-top: 25px;
+}
+
+.progect__naming {
+  color: rgba(0, 0, 0, 0.5);
+  margin-bottom: 12px;
+}
+
+.progect__title {
+  font-size: 36px;
+  margin-bottom: 16px;
+  font-weight: normal;
+}
+
+.progect__title:hover {
+  width: 172px;
+  color: #b58221;
+  border-bottom: 3px solid #b58221;
+}
+
+.progect__text {
+  width: 242px;
+}
