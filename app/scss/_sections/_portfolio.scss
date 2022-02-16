@@ -58,10 +58,30 @@
   font-weight: normal;
 }
 
-.progect__title:hover {
-  width: 172px;
+.progect__title-link {
+  position: relative;
+  transition: 0.3s color;
+  &::after {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    width: 100%;
+    background-color: #b58221;
+    transform-origin: left center;
+    transform: scaleX(0);
+    transition: 0.3s transform;
+  }
+}
+
+.progect__title-link:hover {
   color: #b58221;
-  border-bottom: 3px solid #b58221;
+
+  &::after {
+    transform: scaleX(1);
+  }
 }
 
 .progect__text {

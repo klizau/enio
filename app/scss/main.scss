@@ -19,7 +19,7 @@ body {
 body {
   min-width: 320px;
   position: relative;
-  font-family: "Jost", sans-serif;
+  font-family: "Jost";
   overflow-x: hidden;
   color: black;
   display: flex;
@@ -110,3 +110,4 @@ strong {
 @import "./_sections/section";
 @import "./_sections/headline";
 @import "./_sections/portfolio";
+@import "./_sections/calculate";
