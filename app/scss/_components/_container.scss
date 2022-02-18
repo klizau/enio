@@ -9,6 +9,15 @@
   padding-right: 0;
 }
 
+.container--full {
+  width: 1440px;
+}
+
 .container-with-border {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.container-with-border--full {
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
 }
