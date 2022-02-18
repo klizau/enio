@@ -24,3 +24,16 @@
 .line {
   padding-left: 10px;
 }
+
+.slider__button {
+  width: 52px;
+  height: 22px;
+  border: 1px solid black;
+  border-radius: 30px;
+  &-left {
+    margin-right: 17px;
+  }
+  &-right {
+    margin-left: 17px;
+  }
+}
