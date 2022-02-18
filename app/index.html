@@ -4,308 +4,454 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/main.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"
+      integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <title>etio</title>
   </head>
   <body class="page-body">
     <header class="page-header header">
-      <div class="contact-information">
-        <a href="tel:+78122437215" class="tel link"> +7 (812) 243-72-15</a>
-        <a href="#" class="email">
-          <img class="email__img" src="./img/email.png" alt="email"
-        /></a>
-        <a href="#" class="inst">
-          <img class="inst__img" src="./img/instagram.png" alt="inst"
-        /></a>
-        <a href="#" class="whatsapp">
-          <img class="whatsapp__img" src="./img/whatsapp.png" alt="whatsapp"
-        /></a>
-      </div>
-
-      <div class="header-block">
-        <a href="#" class="header-logo"
-          ><img class="logo" id="logo" src="./img/logo.png" alt="logo"
-        /></a>
-        <div class="nav header__nav">
-          <div class="navigation">
-            <ul class="navigation__list">
-              <li class="navigation__list__item">
-                <a href="#" class="navigation__link link">Коллекции</a>
-              </li>
-              <li class="navigation__list__item">
-                <a href="#" class="navigation__link link">Производство </a>
-              </li>
-              <li class="navigation__list__item">
-                <a href="#" class="navigation__link link">дизайнеры </a>
-              </li>
-              <li class="navigation__list__item">
-                <a href="#" class="navigation__link link"> Полезные статьи</a>
-              </li>
-              <li class="navigation__list__item">
-                <a href="#" class="navigation__link link"> Контакты</a>
-              </li>
-            </ul>
-          </div>
+      <div class="container">
+        <div class="contact-information">
+          <a href="tel:+78122437215" class="tel link"> +7 (812) 243-72-15</a>
+          <a href="#" class="email">
+            <img class="email__img" src="./img/email.svg" alt="email"
+          /></a>
+          <a href="#" class="inst">
+            <img class="inst__img" src="./img/instagram.svg" alt="inst"
+          /></a>
+          <a href="#" class="whatsapp">
+            <img class="whatsapp__img" src="./img/w.svg" alt="whatsapp"
+          /></a>
         </div>
-        <div class="lang header__lang">
-          <a href="#" class="link lang lang--active">RU</a>
-          <a href="#" class="link lang lang--unactive">EN</a>
+
+        <div class="header-block">
+          <a href="#" class="header-logo"
+            ><img class="logo" id="logo" src="./img/logo.png" alt="logo"
+          /></a>
+          <div class="nav header__nav">
+            <div class="navigation">
+              <ul class="navigation__list">
+                <li class="navigation__list__item">
+                  <a href="#" class="navigation__link link">Коллекции</a>
+                </li>
+                <li class="navigation__list__item">
+                  <a href="#" class="navigation__link link">Производство </a>
+                </li>
+                <li class="navigation__list__item">
+                  <a href="#" class="navigation__link link">дизайнеры </a>
+                </li>
+                <li class="navigation__list__item">
+                  <a href="#" class="navigation__link link"> Полезные статьи</a>
+                </li>
+                <li class="navigation__list__item">
+                  <a href="#" class="navigation__link link"> Контакты</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="lang header__lang">
+            <a href="#" class="link lang lang--active">RU</a>
+            <a href="#" class="link lang lang--inactive">EN</a>
+          </div>
         </div>
       </div>
     </header>
 
     <main class="page__main main">
-      <div class="container">
-      <section class="headline section section__headline">
-        <div class="headline__text-block">
-          <h1 class="title headline__title">Мебель как искусство</h1>
-          <p class="headline__text section__text">
-            Создаем оригинальные коллекции и производим мебель на заказ.
-          </p>
-          <a href="#" class="button headline__button link">Обсудить проект</a>
-        </div>
-        <img src="./img/art.png" alt="art" width="1029" height="428" />
-      </section>
-    </div>
+      <section class="section section__headline">
+        <div class="container container--left">
+          <div class="headline">
+            <div class="headline__text-block">
+              <h1 class="title headline__title">Мебель как искусство</h1>
+              <p class="headline__text section__text">
+                Создаем оригинальные коллекции и производим мебель на заказ.
+              </p>
+              <a href="#" class="button headline__button link"
+                >Обсудить проект</a
+              >
+            </div>
+            <div class="headline__slider">
+              <div class="slider-headline">
+                <div class="headline__photo">
+                  <img src="./img/art.png" alt="art" />
+                </div>
 
-        <div class="container">
+                <div class="headline__photo">
+                  <img src="./img/art.png" alt="art" />
+                </div>
+
+                <div class="headline__photo">
+                  <img src="./img/art.png" alt="art" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section class="portfolio section section__portfolio">
-        <div class="portfolio__headline">
-          <h2 class="portfolio__title">Наши проекты</h2>
-          <div class="portfolio__text-block">
-            <p class="portfolio__text section__text">
-              Создадим мебель по вашему проекту или повторим работы из нашей
-              коллекции.
-            </p>
-            <a href="#" class="link button portfolio__button">Все проекты</a>
+        <div class="container-with-border">
+          <div class="container container--left">
+            <div class="portfolio__headline">
+              <h2 class="portfolio__title">Наши проекты</h2>
+              <div class="portfolio__text-block">
+                <p class="portfolio__text section__text">
+                  Создадим мебель по вашему проекту или повторим работы из нашей
+                  коллекции.
+                </p>
+                <a href="#" class="link button portfolio__button"
+                  >Все проекты
+                  <img class="line" src="./img/Line.png" alt="line"
+                /></a>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="portfolio__progects progects">
-          <div class="progect">
-            <span class="progect__naming">Проект</span>
-            <h3 class="progect__title">Адриатика</h3>
-            <p class="proget__text text">
-              Прекрасная мебель из спины бобра на ногах краба. Придут гости,
-              удивятся. Вашу квартиру едва ли теперь забудут.
-            </p>
+        <div class="container-with-border">
+          <div class="container container--left">
+            <div class="portfolio__progects progects">
+              <div class="progect">
+                <span class="progect__naming">Проект</span>
+                <h3 class="progect__title">
+                  <a class="progect__title-link" href="/">Адриатика</a>
+                </h3>
+                <p class="progect__text text">
+                  Прекрасная мебель из спины бобра на ногах краба. Придут гости,
+                  удивятся. Вашу квартиру едва ли теперь забудут.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="portfolio__progects progects">
-          <div class="progect">
-            <span class="progect__naming">Проект</span>
-            <h3 class="progect__title">Адриатика</h3>
-            <p class="proget__text text">
-              Прекрасная мебель из спины бобра на ногах краба. Придут гости,
-              удивятся. Вашу квартиру едва ли теперь забудут.
-            </p>
+        <div class="container container--left">
+          <div class="portfolio__progects progects">
+            <div class="progect">
+              <span class="progect__naming">Проект</span>
+              <h3 class="progect__title"><a href="/">Адриатика</a></h3>
+              <p class="progect__text text">
+                Прекрасная мебель из спины бобра на ногах краба. Придут гости,
+                удивятся. Вашу квартиру едва ли теперь забудут.
+              </p>
+            </div>
           </div>
         </div>
       </section>
-    </div>
 
-      <div class="container">
       <section class="section calculate section__calculate">
-        <div class="order">
-          <div class="calculate__text-block text-block">
-            <h4 class="calculate__title">Мебель на заказ по вашему проекту</h4>
+        <div class="container">
+          <div class="order">
+            <div class="calculate__text-block text-block">
+              <h4 class="calculate__title">
+                Мебель на заказ <br />
+                по вашему проекту
+              </h4>
 
-            <p class="text calculate__text">
-              Воплотим в жизнь дизайн-проект любой сложности, ни упустив ни
-              одной детали.
-            </p>
-            <ul class="pros pros__list pros__order__list">
-              <li class="pros__item list__item">Премиум материалы</li>
-              <li class="pros__item list__item">
-                Реализация проектов любой сложности
-              </li>
-              <li class="pros__item list__item">
-                Производство всех видов корпусной и мягкой мебели
-              </li>
-              <li class="pros__item list__item">
-                Все работы от идеи до монтажа одной командой
-              </li>
-            </ul>
-            <a href="#" class="calculate__button link button"
-              >Рассчитать стоимость проекта
-              <img src="./img/Line.png" alt="line"
-            /></a>
+              <p class="text calculate__text">
+                Воплотим в жизнь дизайн-проект любой сложности, ни упустив ни
+                одной детали.
+              </p>
+              <ul class="pros pros__list pros__order__list">
+                <li class="pros__item list__item">Премиум материалы</li>
+                <li class="pros__item list__item">
+                  Реализация проектов любой сложности
+                </li>
+                <li class="pros__item list__item">
+                  Производство всех видов корпусной и мягкой мебели
+                </li>
+                <li class="pros__item list__item">
+                  Все работы от идеи до монтажа одной командой
+                </li>
+              </ul>
+              <a href="#" class="calculate__button link button"
+                >Рассчитать стоимость проекта
+                <img class="line" src="./img/Line.png" alt="line"
+              /></a>
+            </div>
+            <img src="./img/order.png" alt="order" />
           </div>
-          <img src="./img/order.png" alt="order" />
-        </div>
 
-        <div class="requirement">
-          <div class="requirement__text-block text-block">
-            <h4 class="requirement__title">
-              Наши коллекции по вашим требованиям
-            </h4>
+          <div class="requirement">
+            <div class="requirement__text-block text-block">
+              <h4 class="calculate__title">
+                Наши коллекции <br />
+                по вашим требованиям
+              </h4>
 
-            <p class="text requirement__text">
-              Любой предмет из наших коллекций может быть выполнен в выбранном
-              вами цвете и размере.
-            </p>
-            <ul class="pros pros__list pros__requirement__list">
-              <li class="pros__item list__item">
-                Продуманный оригинальный дизайн
-              </li>
-              <li class="pros__item list__item">
-                Возможность внесения изменений в исходный дизайн
-              </li>
-              <li class="pros__item list__item">Высокое качество исполнения</li>
-              <li class="pros__item list__item">
-                Возможность выбора из наличия
-              </li>
-            </ul>
-            <a href="#" class="calculate__button link button"
-              >Рассчитать стоимость проекта
-              <img src="./img/Line.png" alt="line"
-            /></a>
-          </div>
-          <img src="./img/order.png" alt="order" />
-        </div>
-      </section>
-    </div>
-
-      <div class="container">
-      <section class="material section material__section">
-        <p class="material__title">
-          Кропотливый подбор материалов и собственное производство гарантируют
-          совершенное воплощение проекта и высокое качество мебели
-        </p>
-        <div class="slider material__slider">
-          <button class="slider__button slider__button--left">
-            <img src="./img/Line.png" alt="line" />
-          </button>
-          <img src="./img/work.png" alt="work" />
-          <img src="./img/material.png" alt="material" />
-          <img src="./img/colleagues.png" alt="colleagues" />
-          <button class="slider__button slider__button--right">
-            <img src="./img/Line.png" alt="line" />
-          </button>
-        </div>
-        <div class="block__list">
-          <div class="block">
-            <p class="block__title">Легко добраться</p>
-            <p class="block__text">Производство в черте города</p>
-          </div>
-          <div class="block">
-            <p class="block__title">Персональный менеджер</p>
-            <p class="block__text">
-              Персональный менеджер ведет ваш проект от подписания договора до
-              монтажа
-            </p>
-          </div>
-          <div class="block">
-            <p class="block__title">Соблюдение сроков</p>
-            <p class="block__text">
-              Отлаженный процесс работы, соблюдение планов и сроков. Мы не берем
-              новых проектов в работу пока не убедимся, что обеспечим нашим
-              клиентам реализацию в срок
-            </p>
-          </div>
-          <div class="block">
-            <p class="block__title">Высокое качество</p>
-            <p class="block__text">
-              Итальянские станки, опытные профессионалы и внимание к материалам,
-              гарантируют высокое качество нашей мебели
-            </p>
-          </div>
-        </div>
-        <a href="#" class="button material__button">Подробнее о производстве</a>
-      </section>
-    </div>
-
-      <div class="container">
-      <section class="designer section section__designers">
-        <div class="text-block designers__text-block">
-          <h2 class="designes__title">дизайнеры</h2>
-          <p class="designers__text">Мы сотрудничаем с ведущими дизайнерами</p>
-          <a href="#" class="link button designers__button"
-            >Все дизайнеры<img src="./img/Line.png" alt="line"
-          /></a>
-        </div>
-        <div class="designers__profile profiles">
-          <div class="profile">
-            <img src="./img/designers.png" alt="designers" />
-            <span class="name profile__name">Татьяна Константиновская</span>
-            <span class="job profile__job">классический стиль</span>
-          </div>
-          <div class="profile">
-            <img src="./img/designers.png" alt="designers" />
-            <span class="name profile__name">Татьяна Константиновская</span>
-            <span class="job profile__job">классический стиль</span>
-          </div>
-          <div class="profile">
-            <img src="./img/designers.png" alt="designers" />
-            <span class="name profile__name">Татьяна Константиновская</span>
-            <span class="job profile__job">классический стиль</span>
+              <p class="text calculate__text">
+                Любой предмет из наших коллекций может быть выполнен в выбранном
+                вами цвете и размере.
+              </p>
+              <ul class="pros pros__list pros__requirement__list">
+                <li class="pros__item list__item">
+                  Продуманный оригинальный дизайн
+                </li>
+                <li class="pros__item list__item">
+                  Возможность внесения изменений в исходный дизайн
+                </li>
+                <li class="pros__item list__item">
+                  Высокое качество исполнения
+                </li>
+                <li class="pros__item list__item">
+                  Возможность выбора из наличия
+                </li>
+              </ul>
+              <a href="#" class="calculate__button link button"
+                >Рассчитать стоимость проекта
+                <img class="line" src="./img/Line.png" alt="line"
+              /></a>
+            </div>
+            <img
+              class="calculation__requirement__img"
+              src="./img/requirement.png"
+              alt="requirement"
+            />
           </div>
         </div>
       </section>
-      </div>
 
-      <div class="container">
-      <section class="form section section__form">
-        <div class="form__headline">
-          <h2 class="form__title">Давайте обсудим ваш проект</h2>
-          <p class="form__text">
-            Заполните заявку и мы рассчитаем для вас стоимость всех изделий.
-          </p>
+      <section class="section material__section">
+        <div class="container">
+          <div class="material">
+            <p class="material__title">
+              Кропотливый подбор материалов и собственное производство <br />
+              гарантируют совершенное воплощение проекта и высокое качество
+              мебели
+            </p>
+            <div class="container--full">
+              <div class="slider material__slider">
+                <button class="slider__button slider__button-left">
+                  <img src="./img/Line-l.svg" alt="line" />
+                </button>
+                <div class="material__photos">
+                  <img src="./img/work.png" alt="work" />
+                  <img src="./img/material.png" alt="material" />
+                  <img src="./img/colleagues.png" alt="colleagues" />
+                </div>
+                <button class="slider__button slider__button-right">
+                  <img src="./img/Line-r.svg" alt="line" />
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="file form__file">
-          <img src="./img/add-file.png" alt="add-file" /><span
-            class="file__text"
-            >Прикрепить файл</span
+        <div class="container-with-border--full">
+          <div class="container">
+            <div class="block__list">
+              <div class="block border-right">
+                <p class="block__title">Легко добраться</p>
+                <p class="block__text">
+                  Производство в черте <br />
+                  города
+                </p>
+              </div>
+
+              <div class="block border-right">
+                <p class="block__title">Персональный менеджер</p>
+                <p class="block__text">
+                  Персональный менеджер ведет ваш <br />
+                  проект от подписания договора до <br />
+                  монтажа
+                </p>
+              </div>
+              <div class="block border-right">
+                <p class="block__title">Соблюдение сроков</p>
+                <p class="block__text">
+                  Отлаженный процесс работы, <br />
+                  соблюдение планов и сроков. Мы <br />
+                  не берем новых проектов в работу <br />
+                  пока не убедимся, что обеспечим <br />
+                  нашим клиентам реализацию в срок
+                </p>
+              </div>
+              <div class="block">
+                <p class="block__title">Высокое качество</p>
+                <p class="block__text">
+                  Итальянские станки, опытные <br />
+                  профессионалы и внимание к материалам, <br />
+                  гарантируют высокое качество нашей <br />
+                  мебели
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <a href="#" class="button material__button"
+            >Подробнее о производстве</a
           >
         </div>
-        <div class="checkout">
-          <button class="checkout__button" type=""></button>
+      </section>
+
+      <section class="designer section">
+        <div class="container">
+          <div class="section__designers">
+            <div class="text-block designers__text-block">
+              <h2 class="designes__title">дизайнеры</h2>
+              <p class="designers__text">
+                Мы сотрудничаем с ведущими <br />
+                дизайнерами
+              </p>
+              <a href="#" class="link button designers__button"
+                >Все дизайнеры<img class="line" src="./img/Line.png" alt="line"
+              /></a>
+            </div>
+            <div class="designers__profile profiles">
+              <div class="profile">
+                <img
+                  class="profile-photo"
+                  src="./img/designers.png"
+                  alt="designers"
+                />
+                <a class="profile__text-block" href="/">
+                  <span class="name profile__name"
+                    >Татьяна Константиновская</span
+                  >
+                  <span class="job profile__job">классический стиль</span>
+                </a>
+              </div>
+              <div class="profile">
+                <img
+                  class="profile-photo"
+                  src="./img/designers.png"
+                  alt="designers"
+                />
+                <a class="profile__text-block" href="/">
+                  <span class="name profile__name"
+                    >Татьяна Константиновская</span
+                  >
+                  <span class="job profile__job">классический стиль</span>
+                </a>
+              </div>
+              <div class="profile">
+                <img
+                  class="profile-photo"
+                  src="./img/designers.png"
+                  alt="designers"
+                />
+                <a class="profile__text-block" href="/">
+                  <span class="name profile__name"
+                    >Татьяна Константиновская</span
+                  >
+                  <span class="job profile__job">классический стиль</span>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
-      </div>
+
+      <section class="form section section__form">
+        <div class="container">
+          <div class="form__headline">
+            <h2 class="form__title">Давайте обсудим ваш проект</h2>
+            <p class="form__text">
+              Заполните заявку и мы рассчитаем для вас стоимость всех изделий.
+            </p>
+          </div>
+          <div class="file form__file">
+            <img src="./img/add-file.png" alt="add-file" /><span
+              class="file__text"
+              >Прикрепить файл</span
+            >
+          </div>
+          <div class="checkout">
+            <button class="checkout__button" type=""></button>
+          </div>
+        </div>
+      </section>
     </main>
 
-    <footer class="footer page__footer">
+    <footer class="footer">
       <div class="container">
-      <div class="main-info">
-        <img src="./img/logo.png" alt="logo" />
-        <p class="main-info__copy">©2022 Ennio Furniture</p>
-        <div class="main-info__text-block">
-          <p class="text main-info__text">Условия использования сайта</p>
-          <p class="text main-info__text">
-            Политика обработки персональных данных
-          </p>
+        <div class="page__footer">
+          <div class="main-info">
+            <a href="/" class="footer__logo">
+              <img src="./img/logo.png" alt="logo"
+            /></a>
+            <div class="main-info__text-block">
+              <p class="main-info__copy">©2022 Ennio Furniture</p>
+              <div class="main-info__rules">
+                <a href="#" class="text main-info__terms"
+                  >Условия использования сайта</a
+                >
+                <a href="#" class="text main-info__condicions">
+                  Политика обработки персональных данных
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="navigation footer__navigation">
+            <a href="#" class="navigation__item footer__navigation__item"
+              >Коллекции</a
+            >
+            <a href="#" class="navigation__item footer__navigation__item"
+              >Производство</a
+            >
+            <a href="#" class="navigation__item footer__navigation__item"
+              >Наши дизайнеры</a
+            >
+            <a href="#" class="navigation__item footer__navigation__item"
+              >Статьи</a
+            >
+            <a href="#" class="navigation__item footer__navigation__item"
+              >Контакты</a
+            >
+          </div>
+          <div class="footer__contact-info">
+            <p class="contact-info__adress">
+              197375, Санкт-Петербург, <br />
+              Макулатурный проезд, 4 <br />
+              info@ennio-furniture.com
+            </p>
+            <div class="footer__phone">
+              <a class="footer__tel" href="tel:+78122437215" class="tel link">
+                +7 (812) 243-72-15</a
+              >
+              <p class="tel__text">ежедневно с 10 до 19</p>
+            </div>
+
+            <div class="social-network">
+              <a href="#" class="social-network__item"
+                ><img class="facebook" src="./img/f.svg" alt="f"
+              /></a>
+              <a href="#" class="social-network__item"
+                ><img class="instagram" src="./img/inst.svg" alt="inst"
+              /></a>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="navigation footer__navigation">
-        <a href="#" class="navigation__item footer__navigation__item"
-          >Коллекции</a
-        >
-        <a href="#" class="navigation__item footer__navigation__item"
-          >Производство</a
-        >
-        <a href="#" class="navigation__item footer__navigation__item"
-          >Наши дизайнеры</a
-        >
-        <a href="#" class="navigation__item footer__navigation__item">Статьи</a>
-        <a href="#" class="navigation__item footer__navigation__item"
-          >Контакты</a
-        >
-      </div>
-      <div class="footer__contact-info">
-        <p class="contact-info__adress">
-          197375, Санкт-Петербург, Макулатурный проезд, 4
-          info@ennio-furniture.com
-        </p>
-        <a href="tel:+78122437215" class="tel link"> +7 (812) 243-72-15</a>
-        <p class="tel__text">ежедневно с 10 до 19</p>
-          
-        </div>
-        <div class="social-network">
-          <a href="#" class="social-network__item"><img class="facebook" src="./img/f.png" alt="f"></a>
-          <a href="#" class="social-network__item"><img class="instagram" src="./img/inst.png" alt="inst"></a>
-        </div>
-      </div>
-    </div>
     </footer>
-    <script src="js/common.min.js"></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="js/scripts.min.js"></script>
   </body>
 </html>

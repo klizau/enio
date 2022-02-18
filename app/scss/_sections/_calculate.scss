@@ -1,0 +1,72 @@
+.calculate {
+  margin-top: 60px;
+}
+
+.order {
+  display: flex;
+  margin-bottom: 112px;
+  justify-content: space-between;
+}
+
+.text-block {
+  display: flex;
+  flex-direction: column;
+}
+
+.calculate__text-block {
+  width: 335px;
+  margin-right: 124px;
+}
+
+.calculate__title {
+  font-size: 28px;
+  font-weight: 500;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+}
+
+.calculate__text {
+  margin-bottom: 32px;
+}
+
+.pros__list {
+  margin-left: 20px;
+  margin-bottom: 22px;
+  width: 100%;
+  position: relative;
+}
+
+.list__item {
+  position: relative;
+  padding-bottom: 12px;
+  &::before {
+    position: absolute;
+    content: "";
+    background: url(../../img/list.svg) 0 0 / contain no-repeat;
+    left: -25px;
+    top: 4px;
+    width: 14px;
+    height: 14px;
+  }
+}
+
+.requirement {
+  display: flex;
+  flex-direction: row-reverse;
+  position: relative;
+  margin-bottom: 196px;
+}
+
+.requirement__text-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 374px;
+  margin-left: 150px;
+}
+
+.calculation__requirement__img {
+  position: absolute;
+  right: 550px;
+  bottom: -100px;
+}

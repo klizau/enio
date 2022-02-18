@@ -13,11 +13,13 @@ html {
 html,
 body {
   height: 100%;
+  margin: 0;
+  padding: 0;
 }
 body {
   min-width: 320px;
   position: relative;
-  font-family: sans-serif;
+  font-family: "Jost";
   overflow-x: hidden;
   color: black;
   display: flex;
@@ -33,6 +35,29 @@ body {
       border-color: green;
     }
   }
+}
+h1,
+h2,
+h3,
+h4,
+ul,
+p {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 .events-none {
   pointer-events: none;
@@ -79,3 +104,12 @@ strong {
 
 @import "./_components/header";
 @import "./_components/footer";
+@import "./_components/container";
+@import "./_components/button";
+
+@import "./_sections/section";
+@import "./_sections/headline";
+@import "./_sections/portfolio";
+@import "./_sections/calculate";
+@import "./_sections/material";
+@import "./_sections/designer";
