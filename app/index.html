@@ -10,6 +10,20 @@
       href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"
+      integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <title>etio</title>
   </head>
   <body class="page-body">
@@ -74,7 +88,21 @@
                 >Обсудить проект</a
               >
             </div>
-            <img src="./img/art.png" alt="art" width="1029" height="428" />
+            <div class="headline__slider">
+              <div class="slider-headline">
+                <div class="headline__photo">
+                  <img src="./img/art.png" alt="art" />
+                </div>
+
+                <div class="headline__photo">
+                  <img src="./img/art.png" alt="art" />
+                </div>
+
+                <div class="headline__photo">
+                  <img src="./img/art.png" alt="art" />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -287,25 +315,44 @@
             </div>
             <div class="designers__profile profiles">
               <div class="profile">
-                <img class="profile-photo" src="./img/designers.png" alt="designers" />
+                <img
+                  class="profile-photo"
+                  src="./img/designers.png"
+                  alt="designers"
+                />
                 <a class="profile__text-block" href="/">
-                <span class="name profile__name">Татьяна Константиновская</span>
-                <span class="job profile__job">классический стиль</span>
+                  <span class="name profile__name"
+                    >Татьяна Константиновская</span
+                  >
+                  <span class="job profile__job">классический стиль</span>
                 </a>
               </div>
               <div class="profile">
-                <img class="profile-photo" src="./img/designers.png" alt="designers" />
+                <img
+                  class="profile-photo"
+                  src="./img/designers.png"
+                  alt="designers"
+                />
                 <a class="profile__text-block" href="/">
-                <span class="name profile__name">Татьяна Константиновская</span>
-                <span class="job profile__job">классический стиль</span>
+                  <span class="name profile__name"
+                    >Татьяна Константиновская</span
+                  >
+                  <span class="job profile__job">классический стиль</span>
                 </a>
               </div>
               <div class="profile">
-                <img  class="profile-photo" src="./img/designers.png" alt="designers" />
+                <img
+                  class="profile-photo"
+                  src="./img/designers.png"
+                  alt="designers"
+                />
                 <a class="profile__text-block" href="/">
-                <span class="name profile__name">Татьяна Константиновская</span>
-                <span class="job profile__job">классический стиль</span>
+                  <span class="name profile__name"
+                    >Татьяна Константиновская</span
+                  >
+                  <span class="job profile__job">классический стиль</span>
                 </a>
+              </div>
             </div>
           </div>
         </div>
@@ -334,61 +381,77 @@
 
     <footer class="footer">
       <div class="container">
-        <div class=" page__footer">
-        <div class="main-info">
-          <a href="/" class="footer__logo">
-          <img src="./img/logo.png" alt="logo" /></a>
-          <div class="main-info__text-block">
-          <p class="main-info__copy">©2022 Ennio Furniture</p>
-          <div class="main-info__rules">
-            <a href="#" class="text main-info__terms
-            ">Условия использования сайта</a>
-            <a href="#" class="text main-info__condicions">
-              Политика обработки персональных данных
-            </a>
+        <div class="page__footer">
+          <div class="main-info">
+            <a href="/" class="footer__logo">
+              <img src="./img/logo.png" alt="logo"
+            /></a>
+            <div class="main-info__text-block">
+              <p class="main-info__copy">©2022 Ennio Furniture</p>
+              <div class="main-info__rules">
+                <a href="#" class="text main-info__terms"
+                  >Условия использования сайта</a
+                >
+                <a href="#" class="text main-info__condicions">
+                  Политика обработки персональных данных
+                </a>
+              </div>
+            </div>
           </div>
+          <div class="navigation footer__navigation">
+            <a href="#" class="navigation__item footer__navigation__item"
+              >Коллекции</a
+            >
+            <a href="#" class="navigation__item footer__navigation__item"
+              >Производство</a
+            >
+            <a href="#" class="navigation__item footer__navigation__item"
+              >Наши дизайнеры</a
+            >
+            <a href="#" class="navigation__item footer__navigation__item"
+              >Статьи</a
+            >
+            <a href="#" class="navigation__item footer__navigation__item"
+              >Контакты</a
+            >
           </div>
-        </div>
-        <div class="navigation footer__navigation">
-          <a href="#" class="navigation__item footer__navigation__item"
-            >Коллекции</a
-          >
-          <a href="#" class="navigation__item footer__navigation__item"
-            >Производство</a
-          >
-          <a href="#" class="navigation__item footer__navigation__item"
-            >Наши дизайнеры</a
-          >
-          <a href="#" class="navigation__item footer__navigation__item"
-            >Статьи</a
-          >
-          <a href="#" class="navigation__item footer__navigation__item"
-            >Контакты</a
-          >
-        </div>
-        <div class="footer__contact-info">
-          <p class="contact-info__adress">
-            197375, Санкт-Петербург, <br> Макулатурный проезд, 4 <br>
-            info@ennio-furniture.com
-          </p>
-          <div class="footer__phone">
-          <a class="footer__tel" href="tel:+78122437215" class="tel link"> +7 (812) 243-72-15</a>
-          <p class="tel__text">ежедневно с 10 до 19</p>
-          </div>
-        
+          <div class="footer__contact-info">
+            <p class="contact-info__adress">
+              197375, Санкт-Петербург, <br />
+              Макулатурный проезд, 4 <br />
+              info@ennio-furniture.com
+            </p>
+            <div class="footer__phone">
+              <a class="footer__tel" href="tel:+78122437215" class="tel link">
+                +7 (812) 243-72-15</a
+              >
+              <p class="tel__text">ежедневно с 10 до 19</p>
+            </div>
 
-        <div class="social-network">
-          <a href="#" class="social-network__item"
-            ><img class="facebook" src="./img/f.svg" alt="f"
-          /></a>
-          <a href="#" class="social-network__item"
-            ><img class="instagram" src="./img/inst.svg" alt="inst"
-          /></a>
+            <div class="social-network">
+              <a href="#" class="social-network__item"
+                ><img class="facebook" src="./img/f.svg" alt="f"
+              /></a>
+              <a href="#" class="social-network__item"
+                ><img class="instagram" src="./img/inst.svg" alt="inst"
+              /></a>
+            </div>
+          </div>
         </div>
-        </div>
-      </div>
       </div>
     </footer>
-    <script src="js/common.min.js"></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="js/scripts.min.js"></script>
   </body>
 </html>
