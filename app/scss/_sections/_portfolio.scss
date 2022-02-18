@@ -76,11 +76,13 @@
   }
 }
 
-.progect__title-link:hover {
-  color: #b58221;
+.progects:hover {
+  .progect__title-link {
+    color: #b58221;
 
-  &::after {
-    transform: scaleX(1);
+    &::after {
+      transform: scaleX(1);
+    }
   }
 }
 
