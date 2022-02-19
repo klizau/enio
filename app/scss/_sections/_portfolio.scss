@@ -36,16 +36,14 @@
 .portfolio__projects {
   display: flex;
   justify-content: flex-start;
-  align-items: flex-start;
-  width: 304px;
-  height: 382px;
+  width: 100%;
   box-sizing: border-box;
-  border-right: 1px solid rgba(79, 90, 70, 0.4);
 }
 
 .project {
-  padding-right: 70px;
-  margin-top: 25px;
+  padding: 25px 70px 25px 0;
+  border-right: 1px solid rgba(79, 90, 70, 0.4);
+  align-self: stretch;
 }
 
 .project__naming {
@@ -91,12 +89,25 @@
   width: 242px;
 }
 
-.portfolio__slider{
+.portfolio__slider {
+  position: relative;
   max-width: 100%;
   width: 1036px;
+  height: auto;
+  padding: 25px;
 }
 
-.slider__portfolio__slide{
+.slider__portfolio__slide {
+  box-sizing: border-box;
   width: 500px;
   height: 332px;
+  img {
+    margin-right: 24px;
+  }                                                                    
+}
+
+.button__slider{
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
 }
