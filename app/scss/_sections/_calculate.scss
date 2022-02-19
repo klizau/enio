@@ -6,6 +6,7 @@
   display: flex;
   margin-bottom: 112px;
   justify-content: space-between;
+  font-size: 14px;
 }
 
 .text-block {
@@ -23,6 +24,14 @@
   font-weight: 500;
   margin-bottom: 12px;
   text-transform: uppercase;
+}
+
+.order__title{
+  margin-top: 23px;
+}
+
+.order__button{
+  margin-bottom: 114px;
 }
 
 .calculate__text {
@@ -55,6 +64,7 @@
   flex-direction: row-reverse;
   position: relative;
   margin-bottom: 196px;
+  margin-top: -50px;
 }
 
 .requirement__text-block {
@@ -63,6 +73,7 @@
   justify-content: center;
   width: 374px;
   margin-left: 150px;
+  font-size: 14px;
 }
 
 .calculation__requirement__img {
