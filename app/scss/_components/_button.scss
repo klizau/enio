@@ -10,11 +10,12 @@
   border: 1px solid black;
   border-radius: 30px;
   box-sizing: border-box;
+  transition: background-color 0.2s, border-color 0.2s;
 }
 
 .button:hover {
   background-color: #fae2b4;
-  border: none;
+  border-color:#fae2b4;
 }
 
 .headline__button {
@@ -38,15 +39,14 @@
   }
 }
 
-.slider-left{
-  border: 1px solid white  ;
+.slider-left {
+  border: 1px solid white;
   border-radius: 30px;
   width: 52px;
   height: 22px;
-
 }
 
-.slider-right{
-  border: 1px solid #FAE2B4;
+.slider-right {
+  border: 1px solid #fae2b4;
   border-radius: 30px;
 }
