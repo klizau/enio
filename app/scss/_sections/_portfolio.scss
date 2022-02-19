@@ -20,16 +20,17 @@
 .portfolio__text-block {
   display: flex;
   flex-direction: column;
-  justify-content: start;
+  justify-content: flex-start;
   width: 361px;
   margin-bottom: 26px;
   margin-top: 36px;
+  box-sizing: border-box;
 }
 
 .portfolio__text {
   font-size: 18px;
   line-height: 18px;
-  margin-bottom: 12px;
+  margin-bottom: 20px;
 }
 
 .portfolio__projects {
