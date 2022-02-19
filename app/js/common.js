@@ -2,6 +2,8 @@ $(document).ready(function () {
   $(".slider-headline").slick({
     arrows: false,
     loop: true,
+    autoplay: true,
+    autoplaySpeed: 5000
   });
 
   $(".slider-portfolio").slick({
