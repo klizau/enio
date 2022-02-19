@@ -15,7 +15,7 @@
 
 .button:hover {
   background-color: #fae2b4;
-  border-color:#fae2b4;
+  border-color: #fae2b4;
 }
 
 .headline__button {
@@ -40,22 +40,32 @@
 }
 
 .button__slider {
+  position: relative;
   border: 1px solid white;
   border-radius: 30px;
   width: 52px;
   height: 22px;
+  cursor: pointer;
   svg {
-    width: 10px;
-    height: 10px;
+    position: absolute;
+    left: calc(50% - 14px);
+    top: calc(50% - 4px);
+    width: 28px;
+    height: 8px;
   }
 }
 
-.button__slider:hover{
+.button__slider:hover {
   border-color: #fae2b4;
-  background-image: url(../../img/slider-right.svg) no-repeat;
+  svg {
+    path {
+      fill: #fae2b4;
+    }
+  }
 }
 
-.button__slider--right{
-  transform: rotate(-180deg);
-  color: white
+.button__slider--right {
+  svg {
+    transform: rotate(-180deg);
+  }
 }

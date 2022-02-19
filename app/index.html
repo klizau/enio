@@ -12,16 +12,7 @@
     />
     <link
       rel="stylesheet"
-      type="text/css"
-      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
-    />
-
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"
-      integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
     />
 
     <title>Ennio Furniture</title>
@@ -88,18 +79,37 @@
                 >Обсудить проект</a
               >
             </div>
+
             <div class="headline__slider">
               <div class="slider-headline">
-                <div class="headline__photo">
-                  <img class="photo-headline" src="./img/art.png" alt="art" />
-                </div>
-
-                <div class="headline__photo">
-                  <img class="photo-headline" src="./img/art.png" alt="art" />
-                </div>
-
-                <div class="headline__photo">
-                  <img class="photo-headline" src="./img/art.png" alt="art" />
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="headline__photo">
+                      <img
+                        class="photo-headline"
+                        src="./img/art.png"
+                        alt="art"
+                      />
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="headline__photo">
+                      <img
+                        class="photo-headline"
+                        src="./img/art.png"
+                        alt="art"
+                      />
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="headline__photo">
+                      <img
+                        class="photo-headline"
+                        src="./img/art.png"
+                        alt="art"
+                      />
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -140,47 +150,61 @@
               </div>
               <div class="portfolio__slider">
                 <div class="slider-portfolio">
-                  <div class="slider__portfolio__slide">
-                    <img
-                      class="portfolio__photo"
-                      src="./img/adriatic.png"
-                      alt="adriatic"
-                    />
-                  </div>
-                  <div class="slider__portfolio__slide">
-                    <img
-                      class="portfolio__photo"
-                      src="./img/adriatic.png"
-                      alt="adriatic"
-                    />
-                  </div>
-                  <div class="slider__portfolio__slide">
-                    <img
-                      class="portfolio__photo"
-                      src="./img/adriatic.png"
-                      alt="adriatic"
-                    />
-                  </div>
-                  <div class="slider__portfolio__slide">
-                    <img
-                      class="portfolio__photo"
-                      src="./img/adriatic.png"
-                      alt="adriatic"
-                    />
-                  </div>
-                  <div class="slider__portfolio__slide">
-                    <img
-                      class="portfolio__photo"
-                      src="./img/adriatic.png"
-                      alt="adriatic"
-                    />
-                  </div>
-                  <div class="slider__portfolio__slide">
-                    <img
-                      class="portfolio__photo"
-                      src="./img/adriatic.png"
-                      alt="adriatic"
-                    />
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="slider__portfolio__slide">
+                        <img
+                          class="portfolio__photo"
+                          src="./img/adriatic.png"
+                          alt="adriatic"
+                        />
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="slider__portfolio__slide">
+                        <img
+                          class="portfolio__photo"
+                          src="./img/adriatic.png"
+                          alt="adriatic"
+                        />
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="slider__portfolio__slide">
+                        <img
+                          class="portfolio__photo"
+                          src="./img/adriatic.png"
+                          alt="adriatic"
+                        />
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="slider__portfolio__slide">
+                        <img
+                          class="portfolio__photo"
+                          src="./img/adriatic.png"
+                          alt="adriatic"
+                        />
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="slider__portfolio__slide">
+                        <img
+                          class="portfolio__photo"
+                          src="./img/adriatic.png"
+                          alt="adriatic"
+                        />
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="slider__portfolio__slide">
+                        <img
+                          class="portfolio__photo"
+                          src="./img/adriatic.png"
+                          alt="adriatic"
+                        />
+                      </div>
+                    </div>
                   </div>
                 </div>
                 <div class="button__arrows">
@@ -189,18 +213,36 @@
                     class="button__slider button__slider--left"
                     id="slider-l"
                   >
-                    <img
-                      class="slider__button__left"
-                      src="./img/slider-left.svg"
-                      alt="slider-left"
-                    />
+                    <svg
+                      width="30"
+                      height="8"
+                      viewBox="0 0 30 8"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0.677526 3.53397C0.482264 3.72924 0.482264 4.04582 0.677526 4.24108L3.85951 7.42306C4.05477 7.61832 4.37135 7.61832 4.56661 7.42306C4.76188 7.2278 4.76188 6.91122 4.56661 6.71595L1.73819 3.88753L4.56661 1.0591C4.76188 0.863838 4.76188 0.547256 4.56661 0.351994C4.37135 0.156731 4.05477 0.156731 3.85951 0.351994L0.677526 3.53397ZM29.4666 3.38753L1.03108 3.38753L1.03108 4.38753L29.4666 4.38753L29.4666 3.38753Z"
+                        fill="white"
+                      />
+                    </svg>
                   </button>
                   <button
                     type="button"
                     class="button__slider button__slider--right"
                     id="slider-r"
                   >
-                    <img src="./img/slider-left.svg" alt="line-l" />
+                    <svg
+                      width="30"
+                      height="8"
+                      viewBox="0 0 30 8"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0.677526 3.53397C0.482264 3.72924 0.482264 4.04582 0.677526 4.24108L3.85951 7.42306C4.05477 7.61832 4.37135 7.61832 4.56661 7.42306C4.76188 7.2278 4.76188 6.91122 4.56661 6.71595L1.73819 3.88753L4.56661 1.0591C4.76188 0.863838 4.76188 0.547256 4.56661 0.351994C4.37135 0.156731 4.05477 0.156731 3.85951 0.351994L0.677526 3.53397ZM29.4666 3.38753L1.03108 3.38753L1.03108 4.38753L29.4666 4.38753L29.4666 3.38753Z"
+                        fill="white"
+                      />
+                    </svg>
                   </button>
                 </div>
               </div>
@@ -222,47 +264,61 @@
             </div>
             <div class="portfolio__slider">
               <div class="portfolio-slide">
-                <div class="slider__portfolio__slide">
-                  <img
-                    class="portfolio__photo"
-                    src="./img/adriatic.png"
-                    alt="adriatic"
-                  />
-                </div>
-                <div class="slider__portfolio__slide">
-                  <img
-                    class="portfolio__photo"
-                    src="./img/adriatic.png"
-                    alt="adriatic"
-                  />
-                </div>
-                <div class="slider__portfolio__slide">
-                  <img
-                    class="portfolio__photo"
-                    src="./img/adriatic.png"
-                    alt="adriatic"
-                  />
-                </div>
-                <div class="slider__portfolio__slide">
-                  <img
-                    class="portfolio__photo"
-                    src="./img/adriatic.png"
-                    alt="adriatic"
-                  />
-                </div>
-                <div class="slider__portfolio__slide">
-                  <img
-                    class="portfolio__photo"
-                    src="./img/adriatic.png"
-                    alt="adriatic"
-                  />
-                </div>
-                <div class="slider__portfolio__slide">
-                  <img
-                    class="portfolio__photo"
-                    src="./img/adriatic.png"
-                    alt="adriatic"
-                  />
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="slider__portfolio__slide">
+                      <img
+                        class="portfolio__photo"
+                        src="./img/adriatic.png"
+                        alt="adriatic"
+                      />
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="slider__portfolio__slide">
+                      <img
+                        class="portfolio__photo"
+                        src="./img/adriatic.png"
+                        alt="adriatic"
+                      />
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="slider__portfolio__slide">
+                      <img
+                        class="portfolio__photo"
+                        src="./img/adriatic.png"
+                        alt="adriatic"
+                      />
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="slider__portfolio__slide">
+                      <img
+                        class="portfolio__photo"
+                        src="./img/adriatic.png"
+                        alt="adriatic"
+                      />
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="slider__portfolio__slide">
+                      <img
+                        class="portfolio__photo"
+                        src="./img/adriatic.png"
+                        alt="adriatic"
+                      />
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="slider__portfolio__slide">
+                      <img
+                        class="portfolio__photo"
+                        src="./img/adriatic.png"
+                        alt="adriatic"
+                      />
+                    </div>
+                  </div>
                 </div>
               </div>
               <div class="button__arrows">
@@ -271,14 +327,36 @@
                   class="button__slider button__slider--left"
                   id="slider-left"
                 >
-                  <img src="./img/slider-left.svg" alt="slider-left" />
+                  <svg
+                    width="30"
+                    height="8"
+                    viewBox="0 0 30 8"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0.677526 3.53397C0.482264 3.72924 0.482264 4.04582 0.677526 4.24108L3.85951 7.42306C4.05477 7.61832 4.37135 7.61832 4.56661 7.42306C4.76188 7.2278 4.76188 6.91122 4.56661 6.71595L1.73819 3.88753L4.56661 1.0591C4.76188 0.863838 4.76188 0.547256 4.56661 0.351994C4.37135 0.156731 4.05477 0.156731 3.85951 0.351994L0.677526 3.53397ZM29.4666 3.38753L1.03108 3.38753L1.03108 4.38753L29.4666 4.38753L29.4666 3.38753Z"
+                      fill="white"
+                    />
+                  </svg>
                 </button>
                 <button
                   type="button"
                   class="button__slider button__slider--right"
                   id="slider-right"
                 >
-                  <img src="./img/slider-left.svg" alt="line-l" />
+                  <svg
+                    width="30"
+                    height="8"
+                    viewBox="0 0 30 8"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0.677526 3.53397C0.482264 3.72924 0.482264 4.04582 0.677526 4.24108L3.85951 7.42306C4.05477 7.61832 4.37135 7.61832 4.56661 7.42306C4.76188 7.2278 4.76188 6.91122 4.56661 6.71595L1.73819 3.88753L4.56661 1.0591C4.76188 0.863838 4.76188 0.547256 4.56661 0.351994C4.37135 0.156731 4.05477 0.156731 3.85951 0.351994L0.677526 3.53397ZM29.4666 3.38753L1.03108 3.38753L1.03108 4.38753L29.4666 4.38753L29.4666 3.38753Z"
+                      fill="white"
+                    />
+                  </svg>
                 </button>
               </div>
             </div>
@@ -316,7 +394,7 @@
                 <img class="line" src="./img/Line.svg" alt="line"
               /></a>
             </div>
-            <img src="./img/order.png" alt="order" />
+            <img class="calculate__photo" src="./img/order.png" alt="order" />
           </div>
 
           <div class="requirement">
@@ -352,7 +430,7 @@
               /></a>
             </div>
             <img
-              class="calculation__requirement__img"
+              class="calculation__requirement__img calculate__photo"
               src="./img/requirement.png"
               alt="requirement"
             />
@@ -368,20 +446,66 @@
               гарантируют совершенное воплощение проекта и высокое качество
               мебели
             </p>
-            <div class="container--full">
-              <div class="slider material__slider">
-                <button class="slider__button slider__button-left">
-                  <img src="./img/Line-l.svg" alt="line" />
-                </button>
-                <div class="material__photos">
-                  <img src="./img/work.png" alt="work" />
-                  <img src="./img/material.png" alt="material" />
-                  <img src="./img/colleagues.png" alt="colleagues" />
+            <div class="slider material__slider">
+              <div class="material-photos material__photos">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="material-photos__item">
+                      <div class="test">
+                        <img src="./img/work.png" alt="work" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="material-photos__item">
+                      <div class="test">
+                        <img src="./img/material.png" alt="material" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="material-photos__item">
+                      <div class="test">
+                        <img src="./img/colleagues.png" alt="colleagues" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="material-photos__item">
+                      <div class="test">
+                        <img src="./img/colleagues.png" alt="colleagues" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="material-photos__item">
+                      <div class="test">
+                        <img src="./img/colleagues.png" alt="colleagues" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="material-photos__item">
+                      <div class="test">
+                        <img src="./img/colleagues.png" alt="colleagues" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="material-photos__item">
+                      <div class="test">
+                        <img src="./img/colleagues.png" alt="colleagues" />
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <button class="slider__button slider__button-right">
-                  <img src="./img/Line-r.svg" alt="line" />
-                </button>
               </div>
+              <button class="slider__button slider__button-left">
+                <img src="./img/Line-l.svg" alt="line" />
+              </button>
+              <button class="slider__button slider__button-right">
+                <img src="./img/Line-r.svg" alt="line" />
+              </button>
             </div>
           </div>
         </div>
@@ -573,18 +697,9 @@
         </div>
       </div>
     </footer>
-    <script
-      type="text/javascript"
-      src="//code.jquery.com/jquery-1.11.0.min.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
-    ></script>
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
     <script src="js/scripts.min.js"></script>
   </body>
 </html>

@@ -92,25 +92,33 @@
 .portfolio__slider {
   position: relative;
   max-width: 100%;
-  width: 1036px;
   height: auto;
   padding: 25px;
+  overflow: hidden;
 }
 
 .slider__portfolio__slide {
-  box-sizing: border-box;
-  width: 500px;
-  height: 332px;
-  img {
-    margin-right: 24px;
-  }                                                                    
+  height: auto;
 }
 
-.button__arrows{
+.portfolio__photo {
+  width: 100%;
+  margin-right: 40px;
+}
+
+.button__arrows {
   display: flex;
   flex-direction: row;
   gap: 10px;
   position: absolute;
-  bottom: 40px;
-  left: 40px;
+  bottom: 50px;
+  left: 45px;
+  z-index: 1;
+  svg {
+    width: 28px;
+    height: 8px;
+    path {
+      fill: white;
+    }
+  }
 }
