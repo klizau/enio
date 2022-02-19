@@ -5,16 +5,16 @@ $(document).ready(function () {
   });
 
   $(".slider-portfolio").slick({
-    prevArrow: ".slider-l",
-    nextArrow: ".slider-r",
+    prevArrow: "#slider-l",
+    nextArrow: "#slider-r",
     infinite: true,
     slidesToShow: 2,
     slidesToScroll: 1,
   });
 
   $(".portfolio-slide").slick({
-    prevArrow: ".slider-left",
-    nextArrow: ".slider-right",
+    prevArrow: "#slider-left",
+    nextArrow: "#slider-right",
     infinite: true,
     slidesToShow: 2,
     slidesToScroll: 1,

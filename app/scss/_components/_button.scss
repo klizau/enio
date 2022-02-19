@@ -39,14 +39,23 @@
   }
 }
 
-.slider-left,.slider-l {
+.button__slider {
   border: 1px solid white;
   border-radius: 30px;
   width: 52px;
   height: 22px;
+  svg {
+    width: 10px;
+    height: 10px;
+  }
 }
 
-.slider-right,.slider-r {
-  border: 1px solid #fae2b4;
-  border-radius: 30px;
+.button__slider:hover{
+  border-color: #fae2b4;
+  background-image: url(../../img/slider-right.svg) no-repeat;
+}
+
+.button__slider--right{
+  transform: rotate(-180deg);
+  color: white
 }
