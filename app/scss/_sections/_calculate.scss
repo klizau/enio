@@ -4,7 +4,6 @@
 
 .order {
   display: flex;
-  margin-bottom: 112px;
   justify-content: space-between;
   font-size: 14px;
 }
@@ -62,9 +61,10 @@
 .requirement {
   display: flex;
   flex-direction: row-reverse;
+  justify-content: space-between;
   position: relative;
   margin-bottom: 196px;
-  margin-top: -50px;
+  margin-top: -45px;
 }
 
 .requirement__text-block {
@@ -73,11 +73,12 @@
   justify-content: center;
   width: 374px;
   margin-left: 150px;
+  margin-top: 160px;
+  margin-bottom: 114px;
   font-size: 14px;
 }
 
-.calculation__requirement__img {
-  position: absolute;
-  right: 550px;
-  bottom: -100px;
+.calculation__requirement__img{
+  width: 730px;
+  height: 617px;
 }
