@@ -32,7 +32,7 @@ new Swiper(".material__photos", {
     nextEl: ".slider__button-right",
     prevEl: ".slider__button-left",
   },
-  slidesPerView: 3,
-  spaceBetween: 600,
+  slidesPerView: 'auto',
+  watchOverflow: true,
   speed: 600,
 });
