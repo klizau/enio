@@ -27,8 +27,8 @@
 
 .profiles {
   display: grid;
+  width: 70%;
   grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 43px;
 }
 
 .profile {

@@ -46,12 +46,16 @@
   width: 52px;
   height: 22px;
   cursor: pointer;
+  transition: border 0.2s;
   svg {
     position: absolute;
     left: calc(50% - 14px);
     top: calc(50% - 4px);
     width: 28px;
     height: 8px;
+    path {
+      transition: fill 0.2s;
+    }
   }
 }
 
@@ -67,5 +71,22 @@
 .button__slider--right {
   svg {
     transform: rotate(-180deg);
+  }
+}
+
+.button__slider--dark {
+  border: 1px solid black;
+  svg {
+    path {
+      fill: black;
+    }
+  }
+  &:hover {
+    border: 1px solid grey;
+    svg {
+      path {
+        fill: grey;
+      }
+    }
   }
 }
