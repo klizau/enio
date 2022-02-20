@@ -29,10 +29,10 @@ new Swiper(".portfolio-slide", {
 new Swiper(".material__photos", {
   loop: true,
   navigation: {
-    nextEl: ".slider__button-left",
+    nextEl: ".slider__button-right",
     prevEl: ".slider__button-left",
   },
   slidesPerView: 3,
-  spaceBetween: 24,
+  spaceBetween: 600,
   speed: 600,
 });
