@@ -5,20 +5,20 @@
 .order {
   display: flex;
   justify-content: space-between;
-  font-size: 14px;
 }
 
 .text-block {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: flex-start;
 }
 
 .calculate__text-block {
   width: 40%;
 }
 
-.calculate__photo{
+.calculate__photo {
   width: 60%;
 }
 
@@ -29,11 +29,11 @@
   text-transform: uppercase;
 }
 
-.order__title{
+.order__title {
   margin-top: 23px;
 }
 
-.order__button{
+.order__button {
   margin-bottom: 114px;
 }
 
@@ -42,21 +42,21 @@
 }
 
 .pros__list {
-  margin-left: 20px;
-  margin-bottom: 22px;
-  width: 100%;
-  position: relative;
+  margin: 0;
+  padding: 0;
 }
 
 .list__item {
   position: relative;
-  padding-bottom: 12px;
+  padding-left: 25px;
+  margin-bottom: 12px;
+  
   &::before {
     position: absolute;
     content: "";
     background: url(../../img/list.svg) 0 0 / contain no-repeat;
-    left: -25px;
-    top: 4px;
+    left: 0;
+    top: calc(50% - 7px);
     width: 14px;
     height: 14px;
   }
@@ -73,28 +73,24 @@
 
 .requirement__text-block {
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  width: 374px;
   margin-left: 150px;
-  margin-top: 100px;
+  margin-top: 150px;
   margin-bottom: 114px;
-  font-size: 14px;
 }
 
-.calculation__requirement__img{
-width: 60%;
-height: auto;
+.calculation__requirement__img {
+  width: 60%;
+  height: auto;
 }
 
-@media screen and (max-width: 1440px){
-  .requirement__text-block{
+@media screen and (max-width: 1440px) {
+  .requirement__text-block {
     margin-top: 175px;
   }
 
-  .calculate__text-block{
+  .calculate__text-block {
     margin-top: 30px;
     margin-bottom: 20px;
   }
-
 }
