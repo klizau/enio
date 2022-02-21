@@ -11,11 +11,11 @@
 .text-block {
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 .calculate__text-block {
   width: 40%;
-  margin-right: 124px;
 }
 
 .calculate__photo{

@@ -37,6 +37,10 @@
   text-transform: uppercase;
 }
 
+.navigation__link{
+  transition: color 300ms;
+}
+
 .navigation__link:hover {
   color: #B58221;
 }

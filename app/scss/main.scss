@@ -109,6 +109,12 @@ strong {
   flex-shrink: 0;
 }
 
+@media screen and (max-width: 1024px) {
+  .desktop-only{
+    display: none;
+  }
+}
+
 @import "./_components/header";
 @import "./_components/footer";
 @import "./_components/container";
