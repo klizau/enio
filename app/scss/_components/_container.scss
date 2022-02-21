@@ -16,3 +16,8 @@
   border-top: 1px solid rgba(79, 90, 70, 0.4);
   border-bottom: 1px solid rgba(79, 90, 70, 0.4);
 }
+
+.container-left {
+  width: 25%;
+  flex-shrink: 0;
+}

@@ -3,7 +3,7 @@
 }
 .page__footer {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 25% 1fr 1fr;
   align-items: stretch;
   margin-top: 0;
   box-sizing: border-box;
@@ -37,8 +37,7 @@
 .main-info__rules {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
-  width: 508px;
+  flex-wrap: wrap;
 }
 
 .main-info__terms,
