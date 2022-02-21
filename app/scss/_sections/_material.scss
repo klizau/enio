@@ -67,7 +67,14 @@
   top: 50%;
   transform: translateY(-50%);
   z-index: 3;
-  &:hover{
+  transition: border-color 300ms, fill 300ms;
+  &:hover {
+    border-color: #b58221;
+    svg {
+      path {
+        fill: #b58221;
+      }
+    }
   }
 }
 

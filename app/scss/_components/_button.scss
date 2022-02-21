@@ -13,6 +13,12 @@
   transition: background-color 0.2s, border-color 0.2s;
 }
 
+.portfolio__button, .designers__button {
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 10px;
+}
+
 .button:hover {
   background-color: #fae2b4;
   border-color: #fae2b4;

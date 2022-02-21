@@ -45,6 +45,17 @@
 .main-info__condicions {
   font-weight: 100;
   font-size: 14px;
+  transition: text-decoration 600ms;
+  &:hover{
+    text-decoration: underline;
+  }
+}
+
+.email__link{
+  transition: text-decoration 600ms;
+  .email__link:hover{
+    text-decoration: underline;
+  }
 }
 
 .main-info__terms {
