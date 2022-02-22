@@ -11,6 +11,10 @@
   flex-shrink: 0;
 }
 
+.container-with-border {
+  border-bottom: 1px solid rgba(79, 90, 70, 0.4);
+}
+
 @media screen and (min-width: 1024px) {
   .container {
     box-sizing: border-box;
@@ -24,10 +28,6 @@
 
   .container--left {
     padding-right: 0;
-  }
-
-  .container-with-border {
-    border-bottom: 1px solid rgba(79, 90, 70, 0.4);
   }
 
   .container-with-border--full {
