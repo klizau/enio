@@ -36,3 +36,13 @@ new Swiper(".material__photos", {
   watchOverflow: true,
   speed: 600,
 });
+
+new Swiper(".profiles", {
+  loop: true,
+  slidesPerView: 'auto',
+  watchOverflow: true,
+  speed: 600,
+  slidesPerView: 4,
+  spaceBetween: 44
+});
+
