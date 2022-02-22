@@ -4,25 +4,29 @@
 
 .order {
   display: flex;
-  margin-bottom: 112px;
   justify-content: space-between;
 }
 
 .text-block {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 .calculate__text-block {
-  width: 335px;
-  margin-right: 124px;
+  width: 40%;
 }
 
 .calculate__title {
-  font-size: 28px;
+  font-size: 2rem;
   font-weight: 500;
   margin-bottom: 12px;
   text-transform: uppercase;
+}
+
+.order__title {
+  margin-top: 23px;
 }
 
 .calculate__text {
@@ -30,43 +34,80 @@
 }
 
 .pros__list {
-  margin-left: 20px;
-  margin-bottom: 22px;
-  width: 100%;
-  position: relative;
+  margin: 0;
+  padding: 0;
 }
 
 .list__item {
   position: relative;
-  padding-bottom: 12px;
+  padding-left: 25px;
+  margin-bottom: 12px;
   &::before {
     position: absolute;
     content: "";
     background: url(../../img/list.svg) 0 0 / contain no-repeat;
-    left: -25px;
-    top: 4px;
+    left: 0;
+    top: calc(50% - 7px);
     width: 14px;
     height: 14px;
   }
 }
 
+.order__button {
+  margin-bottom: 114px;
+}
+
+.calculate__photo {
+  width: 60%;
+}
+
 .requirement {
   display: flex;
   flex-direction: row-reverse;
+  justify-content: space-between;
   position: relative;
   margin-bottom: 196px;
+  margin-top: -100px;
 }
 
 .requirement__text-block {
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  width: 374px;
   margin-left: 150px;
+  margin-top: 150px;
+  margin-bottom: 114px;
 }
 
 .calculation__requirement__img {
-  position: absolute;
-  right: 550px;
-  bottom: -100px;
+  width: 60%;
+  height: auto;
+}
+
+@media screen and (max-width: 1440px) {
+  .requirement__text-block {
+    margin-left: 40px;
+    margin-top: 160px;
+  }
+
+  .calculate__text-block {
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .calculate__text-block {
+    margin: 0;
+  }
+  .requirement__text-block {
+    margin-left: 30px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+  .order__button {
+    margin-bottom: 110px;
+  }
+  .requirement {
+    margin-top: -60px;
+  }
 }

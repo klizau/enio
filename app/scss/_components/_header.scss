@@ -1,51 +1,100 @@
 .header {
-  padding-bottom: 34px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-  font-size: 16px;
+  padding: 42px 0 34px;
+  border-bottom: 1px solid rgba(79, 90, 70, 0.4);
 }
 
-.contact-information {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  flex-direction: row;
-  margin-top: 25px;
+.header-block__logo{
+  display: block;
+  width: 150px;
+  height: 62px;
 }
 
-.tel {
-  padding-right: 26px;
-  font-size: 18px;
-}
-
-.email,
-.inst {
-  padding-right: 15px;
+.header__nav {
+  display: none;
 }
 
 .header-block {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
 }
 
-.navigation__list {
-  display: flex;
+.header__burger-button {
+  margin-top: 10px;
 }
 
-.navigation__list__item {
-  padding: 0 16px;
-  text-transform: uppercase;
+.header__contact-information {
+  display: none;
 }
 
-.navigation__link:hover {
-  color: #fae2b4;
+.header__lang {
+  display: none;
 }
 
-.lang--active {
-  color: black;
-  padding-right: 20px;
+
+
+@media screen and (min-width: 768) {
+  
 }
 
-.lang--inactive {
-  color: #a4a4a4 !important;
+@media screen and (min-width: 1024) {
+  .contact-information {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: row;
+    margin-top: 25px;
+  }
+  
+  .header__network {
+    display: flex;
+    align-items: center;
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  
+  .email,
+  .inst {
+    padding-right: 15px;
+  }
+  
+  .tel {
+    padding-right: 26px;
+    font-size: 1.2rem;
+  }
+  
+  .header-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navigation__list {
+    display: flex;
+  }
+  
+  .navigation__list__item {
+    padding: 0 16px;
+    text-transform: uppercase;
+  }
+  
+  .navigation__link {
+    transition: color 300ms;
+  }
+  
+  .navigation__link:hover {
+    color: #b58221;
+  }
+  
+  .lang--active {
+    color: black;
+    padding-right: 20px;
+  }
+  
+  .lang--inactive {
+    color: #a4a4a4 !important;
+  }
 }

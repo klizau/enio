@@ -10,6 +10,11 @@
 html {
   font-size: 14px;
 }
+
+* {
+  box-sizing: border-box;
+}
+
 html,
 body {
   height: 100%;
@@ -18,8 +23,11 @@ body {
 }
 body {
   min-width: 320px;
+  background-color: #FDFBF8;
   position: relative;
   font-family: "Jost";
+  font-size: 1vw;
+  line-height: 1.62;
   overflow-x: hidden;
   color: black;
   display: flex;
@@ -102,6 +110,12 @@ strong {
   flex-shrink: 0;
 }
 
+@media screen and (max-width: 1024px) {
+  .desktop-only{
+    display: none;
+  }
+}
+
 @import "./_components/header";
 @import "./_components/footer";
 @import "./_components/container";
@@ -112,3 +126,4 @@ strong {
 @import "./_sections/calculate";
 @import "./_sections/material";
 @import "./_sections/designer";
+@import "./_sections/form";

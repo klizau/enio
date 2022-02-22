@@ -1,67 +1,98 @@
 .material__section {
   background-color: #f4f0ea;
-  padding-bottom: 50px;
+  padding: 50px 0;
 }
 
-.material {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 46px 0;
+.container-with-border--full {
+  border-top: 1px solid rgba(79, 90, 70, 0.4);
+  border-bottom: 1px solid rgba(79, 90, 70, 0.4);
 }
 
 .material__title {
-  font-size: 22px;
+  font-size: 1.5rem;
   font-weight: 300;
   text-align: center;
   margin-bottom: 38px;
 }
 
-.slider {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  justify-content: space-between;
+.material__slider {
+  position: relative;
+  margin-bottom: 40px;
+
+  .swiper-slide {
+    width: calc(33.3333% - 31.3333px);
+    margin-right: 47px;
+  }
+  img {
+    width: 100%;
+    height: auto;
+  }
 }
 
 .material__photos {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 40px;
-}
-
-.block__list--full {
-  border-top: 1px solid rgba(0, 0, 0, 0.3);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  overflow: hidden;
 }
 
 .block__list {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: space-evenly;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .block {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 152px;
-  padding: 48px 32px 60px 0;
+  padding: 48px 20px 60px;
+  border-right: 1px solid rgba(79, 90, 70, 0.4);
+  &:last-child {
+    border: none;
+  }
 }
 
 .block__title {
-  font-size: 24px;
+  font-size: 1.7rem;
   margin-bottom: 28px;
+  text-align: center;
 }
 
 .block__text {
   text-align: center;
 }
 
-.border-right {
-  border-right: 1px solid rgba(0, 0, 0, 0.3);
-}
 .material__button {
   margin: 50px auto 0;
+  text-transform: uppercase;
+}
+
+.slider__button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 3;
+  transition: border-color 300ms, fill 300ms;
+  &:hover {
+    border-color: #b58221;
+    svg {
+      path {
+        fill: #b58221;
+      }
+    }
+  }
+}
+
+.slider__button-left {
+  left: calc(-52px - 16px);
+}
+
+.slider__button-right {
+  right: calc(-52px - 16px);
+}
+
+@media screen and (max-width: 1024px){
+  .slider__button-left{
+    left: calc(-52px - 10px);
+  }
+  .slider__button-right {
+    right: calc(-52px - 10px);
+  }
 }

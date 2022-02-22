@@ -9,7 +9,7 @@
 }
 
 .portfolio__title {
-  font-size: 36px;
+  font-size: 2.5rem;
   font-weight: 500;
   line-height: 36px;
   margin-right: 165px;
@@ -20,45 +20,44 @@
 .portfolio__text-block {
   display: flex;
   flex-direction: column;
-  justify-content: start;
+  justify-content: flex-start;
   width: 361px;
   margin-bottom: 26px;
   margin-top: 36px;
+  box-sizing: border-box;
 }
 
 .portfolio__text {
-  font-size: 18px;
+  font-size: 1.2rem;
   line-height: 18px;
-  margin-bottom: 12px;
+  margin-bottom: 20px;
 }
 
-.portfolio__progects {
+.portfolio__projects {
   display: flex;
   justify-content: flex-start;
-  align-items: flex-start;
-  width: 304px;
-  height: 382px;
+  width: 100%;
   box-sizing: border-box;
-  border-right: 1px solid rgba(0, 0, 0, 0.3);
 }
 
-.progect {
-  padding-right: 70px;
-  margin-top: 25px;
+.project {
+  height: 100%;
+  padding: 25px 70px 25px 0;
+  border-right: 1px solid rgba(79, 90, 70, 0.4);
 }
 
-.progect__naming {
+.project__naming {
   color: rgba(0, 0, 0, 0.5);
   margin-bottom: 12px;
 }
 
-.progect__title {
-  font-size: 36px;
+.project__title {
+  font-size: 2.5rem;
   margin-bottom: 16px;
   font-weight: normal;
 }
 
-.progect__title-link {
+.project__title-link {
   position: relative;
   transition: 0.3s color;
   &::after {
@@ -67,7 +66,7 @@
     bottom: 0;
     left: 0;
     right: 0;
-    height: 3px;
+    height: 1px;
     width: 100%;
     background-color: #b58221;
     transform-origin: left center;
@@ -76,8 +75,8 @@
   }
 }
 
-.progects:hover {
-  .progect__title-link {
+.projects:hover {
+  .project__title-link {
     color: #b58221;
 
     &::after {
@@ -86,6 +85,47 @@
   }
 }
 
-.progect__text {
-  width: 242px;
+.portfolio__slider {
+  position: relative;
+  max-width: 100%;
+  height: auto;
+  padding: 25px;
+  overflow: hidden;
 }
+
+.slider__portfolio__slide {
+  height: auto;
+}
+
+.portfolio__photo {
+  width: 100%;
+  margin-right: 40px;
+}
+
+.button__arrows {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  position: absolute;
+  bottom: 50px;
+  left: 45px;
+  z-index: 1;
+  svg {
+    width: 28px;
+    height: 8px;
+    path {
+      fill: white;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px){
+  .portfolio__slider{
+    padding: 10px;
+  }
+  .button__arrows{
+    bottom: 25px;
+    left: 30px;
+  }
+  }
+  
