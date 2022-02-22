@@ -46,7 +46,14 @@
   }
 
   .container-left {
-    width: 25%;
+    width: 35%;
+    flex-shrink: 0;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container-left {
+    width: 30%;
     flex-shrink: 0;
   }
 }
