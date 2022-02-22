@@ -33,16 +33,14 @@ new Swiper(".material__photos", {
     prevEl: ".slider__button-left",
   },
   slidesPerView: 'auto',
-  watchOverflow: true,
   speed: 600,
 });
 
 new Swiper(".profiles", {
-  loop: true,
   slidesPerView: 'auto',
-  watchOverflow: true,
   speed: 600,
-  slidesPerView: 4,
   spaceBetween: 44
 });
+
+
 
