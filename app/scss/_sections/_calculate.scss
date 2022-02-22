@@ -18,10 +18,6 @@
   width: 40%;
 }
 
-.calculate__photo {
-  width: 60%;
-}
-
 .calculate__title {
   font-size: 2rem;
   font-weight: 500;
@@ -31,10 +27,6 @@
 
 .order__title {
   margin-top: 23px;
-}
-
-.order__button {
-  margin-bottom: 114px;
 }
 
 .calculate__text {
@@ -50,7 +42,6 @@
   position: relative;
   padding-left: 25px;
   margin-bottom: 12px;
-
   &::before {
     position: absolute;
     content: "";
@@ -60,6 +51,14 @@
     width: 14px;
     height: 14px;
   }
+}
+
+.order__button {
+  margin-bottom: 114px;
+}
+
+.calculate__photo {
+  width: 60%;
 }
 
 .requirement {

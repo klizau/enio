@@ -11,14 +11,24 @@
   margin-top: 25px;
 }
 
-.tel {
-  padding-right: 26px;
-  font-size: 1.2rem;
+.header__network{
+  display: flex;
+align-items: center;
+a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 }
 
 .email,
 .inst {
   padding-right: 15px;
+}
+
+.tel {
+  padding-right: 26px;
+  font-size: 1.2rem;
 }
 
 .header-block {
@@ -42,16 +52,6 @@
 
 .navigation__link:hover {
   color: #B58221;
-}
-
-.header__network{
-  display: flex;
-align-items: center;
-a{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 }
 
 .lang--active {

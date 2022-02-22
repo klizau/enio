@@ -36,10 +36,10 @@ new Swiper(".material__photos", {
   speed: 600,
 });
 
-new Swiper(".profiles", {
-  slidesPerView: 'auto',
+new Swiper(".designers__profile", {
+  slidesPerView: 4,
+  spaceBetween: 44,
   speed: 600,
-  spaceBetween: 44
 });
 
 
