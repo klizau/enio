@@ -14,20 +14,20 @@
 
 .designes__title {
   text-transform: uppercase;
-  font-size: 36px;
+  font-size: 2.5rem;
   font-weight: 500;
   margin-bottom: 24px;
 }
 
 .designers__text {
-  font-size: 18px;
+  font-size: 1.2rem;
   margin-bottom: 42px;
 }
 
 .profiles {
   display: grid;
-  width: 70%;
   grid-template-columns: 287px 287px 287px  ;
+  flex-grow: 1;
   gap: 44px;
   overflow: hidden;
 }
@@ -62,12 +62,12 @@
 
 .profile__name {
   color: white;
-  font-size: 22px;
+  font-size: 1.5rem;
   font-weight: 700;
 }
 
 .profile__job {
-  font-size: 22px;
+  font-size: 1.5rem;
   font-weight: 200;
   color: #fae2b4;
 }

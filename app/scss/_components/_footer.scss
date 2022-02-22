@@ -28,7 +28,7 @@
 }
 
 .main-info__copy {
-  font-size: 18px;
+  font-size: 1.2rem;
   font-weight: 100;
   text-transform: uppercase;
   margin-bottom: 8px;
@@ -43,7 +43,7 @@
 .main-info__terms,
 .main-info__condicions {
   font-weight: 100;
-  font-size: 14px;
+  font-size: 1rem;
   transition: text-decoration 600ms;
   &:hover{
     text-decoration: underline;
@@ -72,7 +72,7 @@
 }
 
 .navigation__item {
-  font-size: 18px;
+  font-size: 1.2rem;
   margin-bottom: 5px;
 }
 
@@ -87,7 +87,7 @@
 }
 
 .contact-info__adress {
-  font-size: 18px;
+  font-size: 1.2rem;
 }
 
 .footer__tel {
@@ -109,7 +109,12 @@
 }
 
 @media screen and (max-width: 1024px){
-  .footer{
-    
+  .page__footer{
+    display: grid;
+    grid-template-columns: 35% 1fr 1fr;
   }
+  .footer__logo{
+    margin-bottom: 30px;
+  }
+
 }

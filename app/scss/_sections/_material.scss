@@ -9,7 +9,7 @@
 }
 
 .material__title {
-  font-size: 22px;
+  font-size: 1.5rem;
   font-weight: 300;
   text-align: center;
   margin-bottom: 38px;
@@ -50,8 +50,9 @@
 }
 
 .block__title {
-  font-size: 24px;
+  font-size: 1.7rem;
   margin-bottom: 28px;
+  text-align: center;
 }
 
 .block__text {
@@ -84,4 +85,13 @@
 
 .slider__button-right {
   right: calc(-52px - 16px);
+}
+
+@media screen and (max-width: 1024px){
+  .slider__button-left{
+    left: calc(-52px - 10px);
+  }
+  .slider__button-right {
+    right: calc(-52px - 10px);
+  }
 }

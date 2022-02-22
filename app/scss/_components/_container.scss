@@ -21,3 +21,17 @@
   width: 25%;
   flex-shrink: 0;
 }
+
+@media screen and (max-width: 1024px) {
+  .container {
+    padding: 0 65px;
+  }
+
+  .container--left {
+    padding-right: 0;
+  }
+
+  .container-left {
+    width: 35%;
+  }
+}
