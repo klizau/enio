@@ -4,25 +4,21 @@ new Swiper(".slider-headline", {
   speed: 800,
 });
 
-new Swiper(".slider-portfolio", {
-  loop: true,
+new Swiper("#project-slider-1", {
+  slidesPerView: "auto",
   navigation: {
-    nextEl: "#slider-r",
-    prevEl: "#slider-l",
+    nextEl: "#slider-btn-r-1",
+    prevEl: "#slider-btn-l-1",
   },
-  slidesPerView: 2,
-  spaceBetween: 40,
   speed: 600,
 });
 
-new Swiper(".portfolio-slide", {
-  loop: true,
+new Swiper("#project-slider-2", {
+  slidesPerView: "auto",
   navigation: {
-    nextEl: "#slider-right",
-    prevEl: "#slider-left",
+    nextEl: "#slider-btn-r-2",
+    prevEl: "#slider-btn-l-2",
   },
-  slidesPerView: 2,
-  spaceBetween: 40,
   speed: 600,
 });
 
@@ -32,15 +28,18 @@ new Swiper(".material__photos", {
     nextEl: ".slider__button-right",
     prevEl: ".slider__button-left",
   },
-  slidesPerView: 'auto',
+  slidesPerView: "auto",
   speed: 600,
 });
 
-new Swiper(".designers__profile", {
-  slidesPerView: 4,
-  spaceBetween: 44,
+new Swiper(".designers__slider", {
+  slidesPerView: "auto",
+  watchOveflow: true,
   speed: 600,
 });
 
+var burgerButton = document.querySelector(".burger-button");
 
-
+burgerButton.addEventListener("click", function () {
+  document.body.classList.toggle("menu-opened");
+});

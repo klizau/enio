@@ -1,5 +1,5 @@
 .section__form {
-  padding: 43px 0 134px;
+  padding: 20px 0;
   color: white;
   background-color: rgba(79, 90, 70, 0.4);
 }
@@ -9,14 +9,14 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 38px;
+  margin-bottom: 26px;
 }
 
 .form__title {
   font-size: 2.5rem;
   font-weight: 500;
   text-transform: uppercase;
-  margin-bottom: 25px;
+  margin-bottom: 10px;
 }
 
 .form__text {
@@ -25,17 +25,15 @@
 
 .form__form {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: flex-start;
   width: 100%;
 }
 
 .form__required-info {
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
-  gap: 30px;
-  width: 25%;
-  margin-right: 40px;
+  gap: 20px;
+  width: 100%;
   flex-grow: 0;
   flex-shrink: 0;
 }
@@ -59,19 +57,19 @@
 }
 
 .form__addition {
-  width: 55%;
+  width: 100%;
   flex-grow: 0;
   flex-shrink: 0;
 }
 
 .addition__textarea {
   height: 100%;
-  margin-bottom: 30px;
+  margin: 32px 0 12px;
 }
 
 .item__description {
   resize: none;
-  height: 126px;
+  height: 96px;
   background-color: transparent;
   border: 1px solid white;
   padding: 20px 14px;
@@ -84,14 +82,16 @@
 
 .addition__buttons {
   display: flex;
-  flex-wrap: nowrap;
-  align-items: center;
-  justify-content: space-between;
+  flex-direction: column;
 }
 
 .button__add-file {
   display: flex;
+  justify-content: flex-start;
   align-items: center;
+  svg {
+    margin-right: 10px;
+  }
 }
 
 .add-file__text {
@@ -107,6 +107,14 @@
 .checkbox__text {
   width: 237px;
   font-size: 1rem;
+  width: 80%;
+}
+
+.form__agreement {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 14px;
 }
 
 .form__checkbox {
@@ -135,4 +143,85 @@
       }
     }
   }
+}
+
+@media screen and (min-width: 1024px) {
+  .section__form {
+    padding: 43px 0 134px;
+    margin: 0 auto;
+  }
+
+  .form__form {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .form__headline {
+    margin-bottom: 38px;
+  }
+
+  .form__title {
+    margin-bottom: 25px;
+  }
+
+  .form__required-info {
+    width: 30%;
+    margin-right: 40px;
+    gap: 30px;
+  }
+
+  .form__addition {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 60%;
+  }
+
+  .addition__textarea {
+    width: 100%;
+    margin-bottom: 30px;
+    margin: 0 0 20px 0;
+  }
+
+  .item__description {
+    height: 126px;
+    padding: 20px 14px;
+  }
+
+  .addition__buttons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .button__add-file {
+    display: flex;
+    align-items: center;
+  }
+
+  .form__checkbox {
+    display: flex;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+  }
+
+  .addition__checkbox {
+    display: flex;
+    padding-right: 20px;
+  }
+
+  .checkbox__text {
+    width: 237px;
+  }
+
+  .form__agreement {
+    display: flex;
+    justify-content: space-between;
+  }
+
 }

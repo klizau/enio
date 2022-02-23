@@ -1,0 +1,143 @@
+.mobile-menu {
+  display: none;
+}
+
+.menu-opened {
+  height: 100vh;
+  overflow: hidden;
+
+  .mobile-menu {
+    display: flex;
+    opacity: 1;
+    animation: fadeInLeft 0.4s ease both;
+  }
+
+  .burger-button {
+    position: fixed;
+    top: 40px;
+    right: 20px;
+    z-index: 12;
+    span:nth-child(1) {
+      transform: rotate(45deg) translateY(12.5px);
+    }
+    span:nth-child(2) {
+      display: none;
+    }
+    span:nth-child(3) {
+      transform: rotate(-45deg) translateY(-12.5px);
+    }
+  }
+}
+
+.mobile-menu {
+  display: none;
+  padding: 40px 0;
+  flex-direction: column;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background: white;
+  overflow: scroll;
+  z-index: 10;
+}
+
+.mobile-menu__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.mobile-menu__content-container {
+  height: 100%;
+}
+
+.mobile-menu__headline {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 40px;
+  margin-bottom: 19px;
+}
+
+.mobile-menu .header__nav {
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.mobile-menu .navigation__list {
+  display: flex;
+  flex-direction: column;
+}
+
+.mobile-menu .navigation__list__item {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.mobile-menu .navigation__link {
+  transition: color 300ms;
+}
+
+.mobile-menu .navigation__link:hover {
+  color: #b58221;
+}
+
+.mobile-menu .contact-information {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.mobile-menu .header__network {
+  display: flex;
+  align-items: baseline;
+}
+
+.mobile-menu .email,
+.mobile-menu .inst {
+  padding-right: 15px;
+}
+
+.mobile-menu .tel {
+  padding-right: 26px;
+  padding-bottom: 12px;
+  font-size: 1.2rem;
+}
+
+.mobile-menu .header__lang {
+  display: block;
+  font-size: 1.2rem;
+}
+
+.mobile-menu .lang--active {
+  color: black;
+  padding-right: 20px;
+}
+
+.mobile-menu .lang--inactive {
+  color: #a4a4a4 !important;
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}

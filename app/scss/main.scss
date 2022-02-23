@@ -116,14 +116,15 @@ strong {
   }
 }
 
-@import "./_components/header";
-@import "./_components/footer";
-@import "./_components/container";
 @import "./_components/button";
+@import "./_components/container";
 
+@import "./_components/header";
+@import "./_sections/burger";
+@import "./_components/footer";
 @import "./_sections/headline";
 @import "./_sections/portfolio";
-@import "./_sections/calculate";
+@import "./_sections/calculate-cost";
 @import "./_sections/material";
 @import "./_sections/designer";
 @import "./_sections/form";

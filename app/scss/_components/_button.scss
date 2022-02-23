@@ -10,6 +10,9 @@
   border-radius: 30px;
   box-sizing: border-box;
   transition: background-color 0.2s, border-color 0.2s;
+  svg {
+    margin-left: 10px;
+  }
 }
 
 .burger-button {
@@ -26,15 +29,12 @@
     height: 2px;
     width: 100%;
     background: #000;
+    transition: transform 0.2s;
   }
-
 }
 
-.portfolio__button,
-.designers__button {
-  display: grid;
-  grid-template-columns: auto auto;
-  column-gap: 10px;
+.button--short {
+  padding: 5px 20px;
 }
 
 .button:hover {
