@@ -32,8 +32,8 @@ new Swiper(".material__photos", {
   speed: 600,
 });
 
-new Swiper(".designers__profile", {
-  slidesPerView: 4,
-  spaceBetween: 44,
+new Swiper(".designers__slider", {
+  slidesPerView: "auto",
+  watchOveflow: true,
   speed: 600,
 });
