@@ -31,13 +31,11 @@
   display: none;
 }
 
-
-
-@media screen and (min-width: 768) {
-  
-}
-
-@media screen and (min-width: 1024) {
+@media screen and (min-width: 1024px) {
+  .header__burger-button {
+    display: none;
+  }
+   
   .contact-information {
     display: flex;
     align-items: center;
@@ -72,6 +70,10 @@
     align-items: center;
   }
   
+  .header__nav{
+    display: block;
+  }
+
   .navigation__list {
     display: flex;
   }
@@ -87,6 +89,10 @@
   
   .navigation__link:hover {
     color: #b58221;
+  }
+
+  .header__lang {
+    display: block;
   }
   
   .lang--active {
