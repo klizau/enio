@@ -37,3 +37,9 @@ new Swiper(".designers__slider", {
   watchOveflow: true,
   speed: 600,
 });
+
+var burgerButton = document.querySelector(".burger-button");
+
+burgerButton.addEventListener("click", function () {
+  document.body.classList.toggle("menu-opened");
+});

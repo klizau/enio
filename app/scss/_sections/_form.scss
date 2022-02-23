@@ -89,6 +89,9 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  svg {
+    margin-right: 10px;
+  }
 }
 
 .add-file__text {
