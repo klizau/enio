@@ -3,7 +3,7 @@
   border-bottom: 1px solid rgba(79, 90, 70, 0.4);
 }
 
-.header-block__logo{
+.header-block__logo {
   display: block;
   width: 150px;
   height: 62px;
@@ -35,7 +35,7 @@
   .header__burger-button {
     display: none;
   }
-   
+
   .contact-information {
     display: flex;
     align-items: center;
@@ -43,7 +43,7 @@
     flex-direction: row;
     margin-top: 25px;
   }
-  
+
   .header__network {
     display: flex;
     align-items: center;
@@ -51,42 +51,49 @@
       display: flex;
       justify-content: center;
       align-items: center;
+
+      &:hover {
+        svg path {
+          fill: #b58221;
+        }
+      }
     }
   }
-  
+
   .email,
   .inst {
     padding-right: 15px;
   }
-  
+
   .tel {
     padding-right: 26px;
-    font-size: 1.2rem;
+    // font-size: 1.2rem;
   }
-  
+
   .header-block {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-  
-  .header__nav{
+
+  .header__nav {
     display: block;
   }
 
   .navigation__list {
     display: flex;
   }
-  
+
   .navigation__list__item {
-    padding: 0 16px;
+    padding: 0 2rem;
+    letter-spacing: 0.5px;
     text-transform: uppercase;
   }
-  
+
   .navigation__link {
     transition: color 300ms;
   }
-  
+
   .navigation__link:hover {
     color: #b58221;
   }
@@ -94,12 +101,12 @@
   .header__lang {
     display: block;
   }
-  
+
   .lang--active {
     color: black;
     padding-right: 20px;
   }
-  
+
   .lang--inactive {
     color: #a4a4a4 !important;
   }

@@ -23,7 +23,7 @@ body {
 }
 body {
   min-width: 320px;
-  background-color: #FDFBF8;
+  background-color: #fdfbf8;
   position: relative;
   font-family: "Jost";
   font-size: 1vw;
@@ -40,7 +40,7 @@ body {
       border-color: red;
     }
     &:required:valid {
-      border-color: green;
+      border-color: #b58221;
     }
   }
 }
@@ -111,7 +111,7 @@ strong {
 }
 
 @media screen and (max-width: 1024px) {
-  .desktop-only{
+  .desktop-only {
     display: none;
   }
 }

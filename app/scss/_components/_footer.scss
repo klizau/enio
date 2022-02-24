@@ -20,7 +20,7 @@
 }
 
 .contact-info__adress {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 
 .email__link {
@@ -37,7 +37,7 @@
 }
 
 .tel__text {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-weight: 300;
 }
 
@@ -50,11 +50,16 @@
 
 .social-network__item {
   padding-right: 20px;
+  &:hover {
+    svg path {
+      fill: #b58221;
+    }
+  }
 }
 
 .main-info__text-block {
   margin: 34px 0 40px;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   padding-left: 20px;
 }
 
@@ -108,14 +113,14 @@
     border-right: 1px solid rgba(79, 90, 70, 0.4);
     padding-top: 42px;
     padding-right: 40px;
-    height: 282px;
+    // height: 282px;
   }
 
   .main-info__text-block {
     display: flex;
     flex-direction: column;
     padding-left: 0;
-    margin-top: 66px ;
+    // margin-top: 66px ;
     margin-bottom: 0;
   }
 
@@ -148,8 +153,8 @@
     padding-top: 42px;
     padding-right: 140px;
     padding-left: 40px;
-    font-size: 1.2rem;
-    height: 282px;
+    font-size: 1.4rem;
+    // height: 282px;
     border-right: 1px solid rgba(79, 90, 70, 0.4);
   }
 
@@ -174,10 +179,11 @@
     padding-right: 0;
     padding-top: 42px;
     padding-left: 40px;
+    padding-bottom: 20px;
   }
 
   .contact-info__adress {
-    font-size: 1.2rem;
+    // font-size: 1.2rem;
   }
 
   .email__link {

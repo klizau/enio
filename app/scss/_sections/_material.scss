@@ -4,7 +4,7 @@
 }
 
 .material__title {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-weight: 300;
   text-align: center;
   margin-bottom: 28px;
@@ -42,25 +42,28 @@
   align-items: center;
   border-bottom: 1px solid rgba(79, 90, 70, 0.4);
   padding-bottom: 22px;
-  &:last-child{
+  &:last-child {
     border: none;
   }
 }
 
 .block__title {
-  font-size: 1.7rem;
+  font-size: 2.1rem;
+  font-weight: 500;
   margin: 28px 0;
   text-align: center;
 }
 
 .block__text {
-  font-size: 1rem;
+  font-size: 1.6rem;
+  line-height: 1.4;
   text-align: center;
 }
 
 .material__button {
-  font-size: 0.9rem;
-  margin-top: 36px ;
+  font-size: 1.2rem;
+  letter-spacing: 0.5px;
+  margin-top: 36px;
   text-transform: uppercase;
 }
 
