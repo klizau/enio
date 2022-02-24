@@ -135,7 +135,7 @@
       right: 0;
       height: 1px;
       width: 100%;
-      background-color: #b58221;
+      background-color: #000;
       transform-origin: left center;
       transform: scaleX(0);
       transition: 0.3s transform;
@@ -144,10 +144,14 @@
 
   .project:hover {
     .project__title-link {
-      color: #b58221;
-
       &::after {
         transform: scaleX(1);
+      }
+      &:hover {
+        color: #b58221;
+        &::after {
+          background-color: #b58221;
+        }
       }
     }
   }
