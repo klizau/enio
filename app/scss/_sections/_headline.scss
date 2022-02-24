@@ -29,6 +29,9 @@
   font-size: 1.8rem;
   line-height: 1.4;
   padding-bottom: 42px;
+  @media screen and (max-width: 680px) {
+    font-size: 1.4rem;
+  }
 }
 
 .headline__slider {

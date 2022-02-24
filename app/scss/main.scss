@@ -9,6 +9,9 @@
 }
 html {
   font-size: 14px;
+  @media screen and (max-width: 680px) {
+    font-size: 12px;
+  }
 }
 
 * {
@@ -32,6 +35,9 @@ body {
   color: black;
   display: flex;
   flex-direction: column;
+  @media screen and (max-width: 680px) {
+    font-size: 12px;
+  }
   input,
   textarea {
     border: #666 1px solid;

@@ -40,6 +40,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   border-bottom: 1px solid rgba(79, 90, 70, 0.4);
   padding-bottom: 22px;
   &:last-child {
@@ -48,9 +49,9 @@
 }
 
 .block__title {
-  font-size: 2.1rem;
+  font-size: 1.6rem;
   font-weight: 500;
-  margin: 28px 0;
+  margin-bottom: 28px;
   text-align: center;
 }
 
@@ -58,12 +59,17 @@
   font-size: 1.6rem;
   line-height: 1.4;
   text-align: center;
+  @media screen and (max-width: 680px) {
+    font-size: 1.4rem;
+  }
 }
 
 .material__button {
   font-size: 1.2rem;
   letter-spacing: 0.5px;
   margin-top: 36px;
+  margin-left: auto;
+  margin-right: auto;
   text-transform: uppercase;
 }
 
@@ -74,6 +80,7 @@
 
   .material__title {
     margin-bottom: 38px;
+    font-size: 2.2rem;
   }
 
   .material__slider {
@@ -99,7 +106,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 48px 20px 60px;
+    justify-content: start;
+    // padding: 48px 20px 60px;
+    padding: 40px;
     border-bottom: none;
     border-right: 1px solid rgba(79, 90, 70, 0.4);
     &:last-child {
@@ -109,6 +118,7 @@
 
   .block__title {
     margin-bottom: 28px;
+    font-size: 2.2rem;
   }
 
   .block__text {

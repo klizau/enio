@@ -1,12 +1,17 @@
 .header {
-  padding: 42px 0 34px;
+  padding: 30px 0;
   border-bottom: 1px solid rgba(79, 90, 70, 0.4);
+
+  @media screen and (min-width: 1024px) {
+    padding: 10px 0 30px;
+  }
 }
 
 .header-block__logo {
   display: block;
-  width: 150px;
-  height: 62px;
+  margin-top: -10px;
+  // width: 150px;
+  // height: 62px;
 }
 
 .header__nav {
@@ -41,7 +46,7 @@
     align-items: center;
     justify-content: flex-end;
     flex-direction: row;
-    margin-top: 25px;
+    // margin-top: 25px;
   }
 
   .header__network {
@@ -51,11 +56,18 @@
       display: flex;
       justify-content: center;
       align-items: center;
-
+      svg {
+        width: 23px;
+        height: auto;
+      }
       &:hover {
         svg path {
           fill: #b58221;
         }
+      }
+      &.email svg {
+        width: 30px;
+        height: 20px;
       }
     }
   }
