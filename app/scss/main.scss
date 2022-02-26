@@ -139,7 +139,7 @@ strong {
 ::-webkit-scrollbar-thumb:window-inactive {
   background: rgba(99, 99, 99, 0.4);
 }
-
+@import "common";
 @import "./_components/button";
 @import "./_components/container";
 
@@ -152,3 +152,4 @@ strong {
 @import "./_sections/material";
 @import "./_sections/designer";
 @import "./_sections/form";
+@import "./_sections/projects";
