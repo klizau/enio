@@ -36,6 +36,7 @@ body {
   color: black;
   display: flex;
   flex-direction: column;
+  height: 100%;
   @media screen and (max-width: 680px) {
     font-size: 12px;
   }
@@ -106,6 +107,7 @@ strong {
   width: 1px !important;
   overflow: hidden;
 }
+
 // footer always at the end of the page
 .header {
   flex-shrink: 0;
@@ -129,10 +131,8 @@ strong {
 
 ::-webkit-scrollbar-track {
   box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-  // border-radius: 7px;
 }
 ::-webkit-scrollbar-thumb {
-  // border-radius: 7px;
   background: rgba(175, 175, 175, 0.8);
   box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
 }
@@ -149,7 +149,8 @@ strong {
 @import "./_sections/headline";
 @import "./_sections/portfolio";
 @import "./_sections/calculate-cost";
-@import "./_sections/material";
-@import "./_sections/designer";
+@import "./_sections/production";
+@import "./_sections/team";
 @import "./_sections/form";
 @import "./_sections/projects";
+@import "./_sections/hero";

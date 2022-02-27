@@ -1,7 +1,7 @@
 .header {
   padding: 30px 0;
-  border-bottom: 1px solid rgba(79, 90, 70, 0.4);
-
+  border-bottom: 1px solid $line-color;
+  font-weight: 300;
   @media screen and (min-width: 1024px) {
     padding: 10px 0 30px;
   }
@@ -78,7 +78,7 @@
   }
 
   .tel {
-    padding-right: 26px;
+    padding-right: 30px;
     // font-size: 1.2rem;
   }
 
@@ -97,17 +97,18 @@
   }
 
   .navigation__list__item {
-    padding: 0 2rem;
-    letter-spacing: 0.5px;
+    padding: 0 3rem;
+
     text-transform: uppercase;
   }
 
   .navigation__link {
     transition: color 300ms;
+    letter-spacing: 0.8px;
   }
 
   .navigation__link:hover {
-    color: #b58221;
+    color: $accent;
   }
 
   .header__lang {
@@ -121,5 +122,28 @@
 
   .lang--inactive {
     color: #a4a4a4 !important;
+  }
+}
+
+.header.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+}
+.header-light {
+  position: absolute;
+  color: #fff;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+  border-bottom: 1px solid rgba(#fff, 0.5);
+  a {
+    color: #fff;
+  }
+  svg path {
+    fill: #fff;
   }
 }

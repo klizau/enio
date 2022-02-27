@@ -22,7 +22,7 @@ new Swiper("#project-slider-2", {
   speed: 600,
 });
 
-new Swiper(".material__photos", {
+new Swiper(".production__photos", {
   loop: true,
   navigation: {
     nextEl: ".slider__button-right",
@@ -32,7 +32,7 @@ new Swiper(".material__photos", {
   speed: 600,
 });
 
-new Swiper(".designers__slider", {
+new Swiper(".team__slider", {
   slidesPerView: "auto",
   watchOveflow: true,
   speed: 600,
