@@ -1,7 +1,3 @@
-.footer__mobile {
-  margin-top: 36px;
-}
-
 .footer__wrapper {
   padding: 0 -20px;
 }
@@ -20,7 +16,7 @@
 }
 
 .contact-info__adress {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
 }
 
 .email__link {
@@ -82,26 +78,14 @@
   }
 }
 
-.footer__desktop {
-  display: none;
-}
-
 @media screen and (min-width: 1024px) {
-  .footer__mobile {
-    display: none;
-  }
-
-  .footer__desktop {
-    display: block;
-  }
-
   .footer {
     border-top: 1px solid rgba(79, 90, 70, 0.4);
   }
 
   .page__footer {
     display: grid;
-    grid-template-columns: 35% 1fr 1fr;
+    grid-template-columns: 40% 1fr 1fr;
     align-items: stretch;
     margin-top: 0;
     box-sizing: border-box;
@@ -113,6 +97,7 @@
     border-right: 1px solid rgba(79, 90, 70, 0.4);
     padding-top: 42px;
     padding-right: 40px;
+
     // height: 282px;
   }
 
@@ -153,7 +138,7 @@
     padding-top: 42px;
     padding-right: 140px;
     padding-left: 40px;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     // height: 282px;
     border-right: 1px solid rgba(79, 90, 70, 0.4);
   }
@@ -174,16 +159,12 @@
   .footer__contact-info {
     display: flex;
     flex-direction: column;
-    width: 308px;
+    width: 40%;
     gap: 20px;
     padding-right: 0;
     padding-top: 42px;
     padding-left: 40px;
     padding-bottom: 20px;
-  }
-
-  .contact-info__adress {
-    // font-size: 1.2rem;
   }
 
   .email__link {
@@ -194,7 +175,7 @@
   }
 
   .footer__tel {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     font-weight: 500;
     margin-bottom: 5px;
   }

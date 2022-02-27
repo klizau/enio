@@ -43,3 +43,17 @@ var burgerButton = document.querySelector(".burger-button");
 burgerButton.addEventListener("click", function () {
   document.body.classList.toggle("menu-opened");
 });
+
+
+$(function () {
+  $('.popup-modal').magnificPopup({
+    type: 'inline',
+    preloader: false,
+    focus: '#username',
+    modal: true
+  });
+  $(document).on('click', '.popup-modal-dismiss', function (e) {
+    e.preventDefault();
+    $.magnificPopup.close();
+  });
+});

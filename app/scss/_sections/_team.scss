@@ -123,13 +123,9 @@
     }
   }
 
-  .team__text-block {
-    // padding: 30px 40px;
-  }
-
   .team__title {
     text-transform: uppercase;
-    font-size: 2.5rem;
+    font-size: 2.4rem;
     font-weight: 500;
     margin-bottom: 24px;
   }
@@ -165,5 +161,124 @@
     &:first-child {
       margin-left: 0;
     }
+  }
+}
+
+.team__wrapper.team__designers {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-column-gap: 2em;
+  // grid-row-gap: 2em;
+  .team__profile {
+    width: 100%;
+    padding: 2em 2em 1em 0;
+    margin-left: 0;
+    margin-bottom: 0;
+    border-right: 1px solid $line-color;
+    &:nth-child(5n) {
+      border-right: 0;
+    }
+    &:after {
+      content: "";
+      width: 200%;
+      height: 1px;
+      position: absolute;
+      bottom: 0;
+      left: -50%;
+      background: $line-color;
+    }
+    img {
+      position: relative;
+      display: block;
+    }
+    .profile__text-block {
+      position: static;
+      height: auto;
+      opacity: 1;
+      background: none;
+      display: block;
+      padding: 20px 0;
+      text-align: left;
+      color: #000;
+      .profile__name,
+      .profile__job {
+        color: #000;
+        display: block;
+      }
+    }
+
+    .profile__over {
+      position: relative;
+      display: block;
+
+      &::after {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: rgba(#000, 0.4);
+        transition: opacity 0.5s ease;
+        opacity: 0;
+        z-index: 1;
+      }
+    }
+
+    .profile__btn {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 0;
+      border: 1px solid #fff;
+      border-radius: 30px;
+      color: #fff;
+      z-index: 2;
+      font-size: 1.4rem;
+      letter-spacing: 0.5px;
+      font-weight: 500;
+      padding: 15px 60px;
+    }
+    &:hover {
+      .profile__over:after,
+      .profile__btn {
+        opacity: 1;
+      }
+    }
+  }
+}
+.section__form.section__form-designers {
+  background-color: #fae2b4;
+  color: #000;
+  margin-top: -3px;
+  position: relative;
+  z-index: 2;
+  .input__item,
+  .item__description {
+    border-color: #000;
+    color: #000;
+  }
+  .add-file__text {
+    color: #000;
+  }
+  .form__button {
+    border-color: #000;
+    path {
+      fill: #000;
+    }
+  }
+  .button__add-file path {
+    fill: #000;
+  }
+  ::placeholder {
+    color: #333;
+    // font-size: 1.2em;
   }
 }
