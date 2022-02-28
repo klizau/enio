@@ -1,0 +1,82 @@
+.contacts__wrapper {
+  background: #4f5a46;
+  color: #fff;
+  padding-top: 165px;
+  @media screen and (max-width: 980px) {
+    padding-top: 140px;
+  }
+  .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .contacts__left {
+    width: 50%;
+    padding-right: 40px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    border-right: 1px solid rgba(#fff, 0.4);
+    @media screen and (max-width: 980px) {
+      width: 100%;
+      border-right: 0;
+      padding-bottom: 40px;
+      border-bottom: 1px solid rgba(#fff, 0.4);
+    }
+  }
+  .contacts__right {
+    width: 50%;
+    padding-bottom: 100px;
+    padding-left: 100px;
+    padding-top: 100px;
+    @media screen and (max-width: 980px) {
+      width: 100%;
+      padding-top: 40px;
+      padding-left: 0;
+    }
+
+    a {
+      display: block;
+    }
+  }
+  p {
+    margin-bottom: 20px;
+    max-width: 800px;
+  }
+  a {
+    color: #fae2b4;
+  }
+  h3 {
+    font-weight: normal;
+    text-transform: uppercase;
+    margin: 20px 0;
+  }
+  .phone {
+    font-size: 2.4rem;
+    margin-bottom: 30px;
+  }
+  .form__form {
+    display: block;
+  }
+  .form__required-info {
+    width: 100%;
+    max-width: 500px;
+  }
+}
+
+.section__form.nobg {
+  color: #000;
+  .input__item,
+  .item__description {
+    border-color: #000;
+    color: #000;
+  }
+  .add-file__text {
+    color: #000;
+  }
+  .form__button {
+    border-color: #000;
+  }
+  svg path {
+    fill: #000;
+  }
+}

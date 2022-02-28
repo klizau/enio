@@ -12,6 +12,11 @@
   box-sizing: border-box;
   text-transform: uppercase;
   transition: background-color 0.2s, border-color 0.2s;
+  border-right: 0;
+  @media screen and (max-width: 980px) {
+    font-size: 1.1rem;
+    padding: 10px 20px;
+  }
   svg {
     margin-left: 10px;
   }

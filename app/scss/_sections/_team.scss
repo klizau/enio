@@ -168,13 +168,19 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-column-gap: 2em;
-  // grid-row-gap: 2em;
+  @media screen and (max-width: 980px) {
+    display: block;
+  }
   .team__profile {
     width: 100%;
     padding: 2em 2em 1em 0;
     margin-left: 0;
     margin-bottom: 0;
     border-right: 1px solid $line-color;
+    @media screen and (max-width: 980px) {
+      border-right: 0;
+      padding-right: 0;
+    }
     &:nth-child(5n) {
       border-right: 0;
     }
@@ -186,6 +192,10 @@
       bottom: 0;
       left: -50%;
       background: $line-color;
+      @media screen and (max-width: 980px) {
+        width: 100%;
+        left: 0;
+      }
     }
     img {
       position: relative;

@@ -8,7 +8,7 @@
 ::selection {
 }
 html {
-  font-size: 14px;
+  font-size: 12px;
   @media screen and (max-width: 680px) {
     font-size: 12px;
   }
@@ -108,6 +108,10 @@ strong {
   overflow: hidden;
 }
 
+.nobg {
+  background: transparent !important;
+}
+
 // footer always at the end of the page
 .header {
   flex-shrink: 0;
@@ -171,3 +175,4 @@ strong {
 @import "./_sections/form";
 @import "./_sections/projects";
 @import "./_sections/hero";
+@import "./_sections/contacts";

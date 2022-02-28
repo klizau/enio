@@ -6,6 +6,7 @@
   display: block;
   padding-bottom: 34px;
   padding-left: 20px;
+  padding-top: 20px;
 }
 
 .footer__mobile__cantact-info {
@@ -85,7 +86,7 @@
 
   .page__footer {
     display: grid;
-    grid-template-columns: 40% 1fr 1fr;
+    grid-template-columns: 40% 1fr 2fr;
     align-items: stretch;
     margin-top: 0;
     box-sizing: border-box;
