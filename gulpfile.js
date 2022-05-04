@@ -49,7 +49,7 @@ gulp.task("scripts", function () {
       .src(
         "app/js/common.js" // Always at the end
       )
-      .pipe(concat("scripts.min.js"))
+      .pipe(concat("common.min.js"))
       // .pipe(uglify()) // Mifify js (opt.)
       .pipe(gulp.dest("app/js"))
       .pipe(browserSync.reload({ stream: true }))
